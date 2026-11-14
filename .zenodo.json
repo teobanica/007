@@ -1,0 +1,11 @@
+{
+  "title": "Flat linearity of uniform groups",
+  "description": "Paper (28 pages, PDF and LaTeX source) and the complete code behind its computations. A uniform group is a quotient Z<sub>K</sub><sup>*M</sup> &rarr; &Gamma; &rarr; Z<sub>K</sub><sup>M</sup> on which S<sub>M</sub> acts by permuting the generators, and a flat representation is a representation &pi; : &Gamma; &rarr; U<sub>K</sub> such that each &pi;(g<sub>i</sub>) has the K-th roots of unity as eigenvalues. These are the quasi-flat matrix models of the group duals inside S<sub>KM</sub><sup>+</sup>. We show that Z<sub>K</sub><sup>*M</sup> is flat linear, in the sense that its flat representations separate points, and that for finite groups, flat linearity and stationarity reduce to exact covering problems. We use this to compute a census of the uniform groups in the SmallGroups library of GAP, and to prove results on the Heisenberg and metabelian groups, and on the reflection groups of Raum and Weber.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {"name": "Opus 5.5"},
+    {"name": "Teo 2.0", "orcid": "0000-0003-4680-0364"}
+  ],
+  "keywords": ["uniform groups", "flat representations", "quantum permutation groups", "group duals", "matrix models", "easy quantum groups", "reflection groups", "SmallGroups library"]
+}
