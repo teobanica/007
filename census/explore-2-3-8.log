@@ -1,0 +1,9 @@
+24 | 1^8 2^4 | A=1 | B=1 | covers=8 | flatlin=1 | stationary
+     gens = [[2, 5, 0, 4, 3, 1, 7, 6], [1, 0, 4, 3, 2, 5, 6, 7], [5, 4, 3, 2, 1, 0, 6, 7]]
+96 | 1^8 2^4 3^8 | A=0 | B=0 | covers=8 | flatlin=0 | not stationary   <-- NOT FLAT LINEAR
+     gens = [[0, 1, 2, 7, 4, 5, 6, 3], [2, 1, 0, 6, 5, 4, 3, 7], [0, 3, 2, 1, 5, 4, 6, 7]]
+8 | 1^8 | A=1 | B=1 | covers=4 | flatlin=1 | stationary
+     gens = [[7, 1, 2, 3, 4, 5, 6, 0], [0, 5, 2, 3, 4, 1, 6, 7], [0, 1, 2, 4, 3, 5, 6, 7]]
+32 | 1^8 2^6 | A=1 | B=1 | covers=10 | flatlin=1 | stationary
+     gens = [[2, 3, 0, 1, 6, 5, 4, 7], [7, 3, 5, 1, 6, 2, 4, 0], [2, 1, 0, 6, 4, 5, 3, 7]]
+tries=3000, distinct=4, time=51s

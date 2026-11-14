@@ -1,0 +1,5 @@
+start dempsey
+K=3 q=3 order=729 done, time=382ms
+K=4 q=2 order=8192 done, time=16158ms
+K=3 q=7 order=21609 done, time=7783ms
+K=3 q=11 order=131769 done, time=90061ms

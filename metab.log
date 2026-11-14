@@ -1,0 +1,20 @@
+== Gamma_{3,2} : |Gamma| = 144, K = 3, M = 2
+   classes: 16, irreducible dims: {1: 9, 3: 6, 9: 1}
+   S_M symmetric: True
+   diagonal kernel abelian: False
+   admissible irreducibles: 15 of 16
+   flat covers (iso classes of flat reps): 12
+   irreducibles used by flat covers: 15
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: not stationary
+   irreducible #15 (dim 9) occurs in no flat representation
+== Gamma_{3,3} : |Gamma| = 729, K = 3, M = 2
+   classes: 41, irreducible dims: {1: 9, 3: 26, 9: 6}
+   S_M symmetric: True
+   diagonal kernel abelian: False
+   admissible irreducibles: 23 of 41
+   flat covers (iso classes of flat reps): 20
+   irreducibles used by flat covers: 23
+   common kernel of flat reps: order 3 -> flat linear: False
+   stationarity: not stationary
+   irreducible #11 (dim 3) occurs in no flat representation

@@ -1,0 +1,5 @@
+s=4: 11 angle patterns, finite image orders [2, 4, 8, 16], infinite images for patterns (in units 2pi/s): []
+s=6: 24 angle patterns, finite image orders [2, 4, 6, 12, 48], infinite images for patterns (in units 2pi/s): []
+s=8: 45 angle patterns, finite image orders [2, 4, 8, 16, 32], infinite images for patterns (in units 2pi/s): [(1, 1, 1), (1, 3, 3), (3, 1, 3), (3, 3, 1)]
+s=10: 76 angle patterns, finite image orders [2, 4, 10, 20, 240], infinite images for patterns (in units 2pi/s): [(1, 2, 2), (1, 3, 3), (2, 1, 2), (2, 2, 1), (2, 2, 2), (2, 3, 3), (2, 3, 4), (2, 4, 3), (3, 1, 3), (3, 2, 3), (3, 2, 4), (3, 3, 1), (3, 3, 2), (3, 4, 2), (4, 2, 3), (4, 3, 2)]
+s=12: 119 angle patterns, finite image orders [2, 4, 6, 8, 12, 16, 24, 48], infinite images for patterns (in units 2pi/s): [(1, 1, 1), (1, 2, 2), (1, 4, 4), (1, 5, 5), (2, 1, 2), (2, 2, 1), (2, 4, 5), (2, 5, 4), (4, 1, 4), (4, 2, 5), (4, 4, 1), (4, 5, 2), (5, 1, 5), (5, 2, 4), (5, 4, 2), (5, 5, 1)]

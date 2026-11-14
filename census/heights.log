@@ -1,0 +1,61 @@
+(72,25) e=1 K=3 M=2 | 1^9 2^9 3^3 | h_lin=1 h_stat=2 | m=1: covers=18 ker=1 stat=False; m=2: covers=204 ker=1 stat=True
+(72,25) e=2 K=3 M=2 | 1^9 2^9 3^3 | h_lin=1 h_stat=2 | m=1: covers=18 ker=1 stat=False; m=2: covers=204 ker=1 stat=True
+(144,184) e=1 K=3 M=2 | 1^9 3^6 9^1 | h_lin=1 h_stat=3 | m=1: covers=12 ker=1 stat=False; m=2: covers=78 ker=1 stat=False; m=3: covers=364 ker=1 stat=True
+(216,42) e=1 K=3 M=2 | 1^9 2^9 3^11 6^2 | h_lin=1 h_stat=2 | m=1: covers=26 ker=1 stat=False; m=2: covers=386 ker=1 stat=True
+(216,42) e=2 K=3 M=2 | 1^9 2^9 3^11 6^2 | h_lin=1 h_stat=2 | m=1: covers=26 ker=1 stat=False; m=2: covers=386 ker=1 stat=True
+(243,3) e=1 K=3 M=2 | 1^9 3^26 | h_lin=1 h_stat=2 | m=1: covers=20 ker=1 stat=False; m=2: covers=252 ker=1 stat=True
+(243,28) e=1 K=3 M=2 | 1^9 3^8 9^2 | h_lin=3 h_stat=3 | m=1: covers=14 ker=3 stat=False; m=2: covers=105 ker=3 stat=False; m=3: covers=561 ker=1 stat=True
+(243,28) e=4 K=3 M=2 | 1^9 3^8 9^2 | h_lin=3 h_stat=3 | m=1: covers=14 ker=3 stat=False; m=2: covers=105 ker=3 stat=False; m=3: covers=561 ker=1 stat=True
+(252,27) e=2 K=3 M=2 | 1^9 3^9 9^2 | h_lin=1 h_stat=3 | m=1: covers=15 ker=1 stat=False; m=2: covers=120 ker=1 stat=False; m=3: covers=681 ker=1 stat=True
+(252,27) e=4 K=3 M=2 | 1^9 3^9 9^2 | h_lin=1 h_stat=3 | m=1: covers=15 ker=1 stat=False; m=2: covers=120 ker=1 stat=False; m=3: covers=681 ker=1 stat=True
+(288,230) e=1 K=3 M=2 | 1^9 2^9 3^15 6^3 | h_lin=1 h_stat=2 | m=1: covers=30 ker=1 stat=False; m=2: covers=501 ker=1 stat=True
+(288,230) e=2 K=3 M=2 | 1^9 2^9 3^15 6^3 | h_lin=1 h_stat=2 | m=1: covers=30 ker=1 stat=False; m=2: covers=501 ker=1 stat=True
+(288,859) e=1 K=3 M=2 | 1^9 2^9 3^6 6^3 9^1 | h_lin=1 h_stat=3 | m=1: covers=21 ker=1 stat=False; m=2: covers=267 ker=1 stat=False; m=3: covers=2440 ker=1 stat=True
+(288,859) e=2 K=3 M=2 | 1^9 2^9 3^6 6^3 9^1 | h_lin=1 h_stat=3 | m=1: covers=21 ker=1 stat=False; m=2: covers=267 ker=1 stat=False; m=3: covers=2440 ker=1 stat=True
+(288,860) e=1 K=3 M=2 | 1^9 3^6 4^9 9^1 | h_lin=2 h_stat=>3 | m=1: covers=12 ker=2 stat=False; m=2: covers=96 ker=1 stat=False; m=3: covers=589 ker=1 stat=False
+(324,54) e=1 K=3 M=2 | 1^9 3^17 9^2 | h_lin=1 h_stat=3 | m=1: covers=23 ker=1 stat=False; m=2: covers=276 ker=1 stat=False; m=3: covers=2301 ker=1 stat=True
+(324,54) e=2 K=3 M=2 | 1^9 3^17 9^2 | h_lin=1 h_stat=3 | m=1: covers=23 ker=1 stat=False; m=2: covers=276 ker=1 stat=False; m=3: covers=2301 ker=1 stat=True
+(432,526) e=1 K=3 M=2 | 1^9 3^20 9^3 | h_lin=1 h_stat=3 | m=1: covers=26 ker=1 stat=False; m=2: covers=351 ker=1 stat=False; m=3: covers=3278 ker=1 stat=True
+(468,32) e=2 K=3 M=2 | 1^9 3^15 9^4 | h_lin=1 h_stat=3 | m=1: covers=21 ker=1 stat=False; m=2: covers=231 ker=1 stat=False; m=3: covers=1774 ker=1 stat=True
+(468,32) e=4 K=3 M=2 | 1^9 3^15 9^4 | h_lin=1 h_stat=3 | m=1: covers=21 ker=1 stat=False; m=2: covers=231 ker=1 stat=False; m=3: covers=1774 ker=1 stat=True
+(504,74) e=1 K=3 M=2 | 1^9 2^9 3^9 6^6 9^2 | h_lin=1 h_stat=>3 | m=1: covers=24 ker=1 stat=False; m=2: covers=339 ker=1 stat=False; m=3: covers=3450 ker=1 stat=False
+(504,74) e=4 K=3 M=2 | 1^9 2^9 3^9 6^6 9^2 | h_lin=1 h_stat=>3 | m=1: covers=24 ker=1 stat=False; m=2: covers=339 ker=1 stat=False; m=3: covers=3450 ker=1 stat=False
+(504,127) e=1 K=3 M=2 | 1^9 2^9 3^27 6^6 | h_lin=1 h_stat=2 | m=1: covers=42 ker=1 stat=False; m=2: covers=942 ker=1 stat=True
+(504,127) e=4 K=3 M=2 | 1^9 2^9 3^27 6^6 | h_lin=1 h_stat=2 | m=1: covers=42 ker=1 stat=False; m=2: covers=942 ker=1 stat=True
+(540,88) e=1 K=3 M=2 | 1^9 3^18 4^9 5^9 | h_lin=1 h_stat=3 | m=1: covers=24 ker=1 stat=False; m=2: covers=327 ker=1 stat=False; m=3: covers=3274 ker=1 stat=True
+(567,17) e=1 K=3 M=2 | 1^9 3^26 9^4 | h_lin=1 h_stat=3 | m=1: covers=32 ker=1 stat=False; m=2: covers=528 ker=1 stat=False; m=3: covers=5987 ker=1 stat=True
+(567,17) e=4 K=3 M=2 | 1^9 3^26 9^4 | h_lin=1 h_stat=3 | m=1: covers=32 ker=1 stat=False; m=2: covers=528 ker=1 stat=False; m=3: covers=5987 ker=1 stat=True
+(648,94) e=1 K=3 M=2 | 1^9 2^9 3^35 6^8 | h_lin=1 h_stat=2 | m=1: covers=50 ker=1 stat=False; m=2: covers=1316 ker=1 stat=True
+(648,94) e=2 K=3 M=2 | 1^9 2^9 3^35 6^8 | h_lin=1 h_stat=2 | m=1: covers=50 ker=1 stat=False; m=2: covers=1316 ker=1 stat=True
+(648,98) e=1 K=3 M=2 | 1^9 2^9 3^17 6^8 9^2 | h_lin=1 h_stat=3 | m=1: covers=32 ker=1 stat=False; m=2: covers=569 ker=1 stat=False; m=3: covers=7210 ker=1 stat=True
+(648,98) e=2 K=3 M=2 | 1^9 2^9 3^17 6^8 9^2 | h_lin=1 h_stat=3 | m=1: covers=32 ker=1 stat=False; m=2: covers=569 ker=1 stat=False; m=3: covers=7210 ker=1 stat=True
+(648,702) e=7 K=3 M=2 | 1^9 2^9 3^3 8^9 | h_lin=3 h_stat=>3 | m=1: covers=18 ker=9 stat=False; m=2: covers=204 ker=9 stat=False; m=3: covers=1655 ker=1 stat=False
+(648,702) e=8 K=3 M=2 | 1^9 2^9 3^3 8^9 | h_lin=3 h_stat=>3 | m=1: covers=18 ker=9 stat=False; m=2: covers=204 ker=9 stat=False; m=3: covers=1655 ker=1 stat=False
+(684,32) e=1 K=3 M=2 | 1^9 3^21 9^6 | h_lin=1 h_stat=3 | m=1: covers=27 ker=1 stat=False; m=2: covers=378 ker=1 stat=False; m=3: covers=3659 ker=1 stat=True
+(684,32) e=4 K=3 M=2 | 1^9 3^21 9^6 | h_lin=1 h_stat=3 | m=1: covers=27 ker=1 stat=False; m=2: covers=378 ker=1 stat=False; m=3: covers=3659 ker=1 stat=True
+(729,34) e=1 K=3 M=2 | 1^9 3^26 9^6 | h_lin=3 h_stat=3 | m=1: covers=20 ker=3 stat=False; m=2: covers=252 ker=3 stat=False; m=3: covers=2467 ker=1 stat=True
+(729,37) e=1 K=3 M=2 | 1^9 3^26 9^6 | h_lin=3 h_stat=3 | m=1: covers=20 ker=3 stat=False; m=2: covers=252 ker=3 stat=False; m=3: covers=2467 ker=1 stat=True
+(729,40) e=1 K=3 M=2 | 1^9 3^44 9^4 | h_lin=1 h_stat=3 | m=1: covers=38 ker=1 stat=False; m=2: covers=783 ker=1 stat=False; m=3: covers=11561 ker=1 stat=True
+(729,40) e=2 K=3 M=2 | 1^9 3^44 9^4 | h_lin=1 h_stat=3 | m=1: covers=38 ker=1 stat=False; m=2: covers=783 ker=1 stat=False; m=3: covers=11561 ker=1 stat=True
+(756,64) e=1 K=3 M=2 | 1^9 3^29 9^6 | h_lin=1 h_stat=3 | m=1: covers=35 ker=1 stat=False; m=2: covers=630 ker=1 stat=False; m=3: covers=7775 ker=1 stat=True
+(756,64) e=4 K=3 M=2 | 1^9 3^29 9^6 | h_lin=1 h_stat=3 | m=1: covers=35 ker=1 stat=False; m=2: covers=630 ker=1 stat=False; m=3: covers=7775 ker=1 stat=True
+(900,98) e=1 K=3 M=2 | 1^9 3^27 9^8 | h_lin=1 h_stat=3 | m=1: covers=33 ker=1 stat=False; m=2: covers=561 ker=1 stat=False; m=3: covers=6552 ker=1 stat=True
+(900,98) e=2 K=3 M=2 | 1^9 3^27 9^8 | h_lin=1 h_stat=3 | m=1: covers=33 ker=1 stat=False; m=2: covers=561 ker=1 stat=False; m=3: covers=6552 ker=1 stat=True
+(936,81) e=1 K=3 M=2 | 1^9 2^9 3^15 6^12 9^4 | h_lin=1 h_stat=>3 | m=1: covers=30 ker=1 stat=False; m=2: covers=510 ker=1 stat=False; m=3: covers=6226 ker=1 stat=False
+(936,81) e=4 K=3 M=2 | 1^9 2^9 3^15 6^12 9^4 | h_lin=1 h_stat=>3 | m=1: covers=30 ker=1 stat=False; m=2: covers=510 ker=1 stat=False; m=3: covers=6226 ker=1 stat=False
+(936,138) e=1 K=3 M=2 | 1^9 2^9 3^51 6^12 | h_lin=1 h_stat=2 | m=1: covers=66 ker=1 stat=False; m=2: covers=2256 ker=1 stat=True
+(936,138) e=4 K=3 M=2 | 1^9 2^9 3^51 6^12 | h_lin=1 h_stat=2 | m=1: covers=66 ker=1 stat=False; m=2: covers=2256 ker=1 stat=True
+(972,138) e=1 K=3 M=2 | 1^9 3^53 9^6 | h_lin=1 h_stat=3 | m=1: covers=47 ker=1 stat=False; m=2: covers=1170 ker=1 stat=False; m=3: covers=20485 ker=1 stat=True
+(972,138) e=2 K=3 M=2 | 1^9 3^53 9^6 | h_lin=1 h_stat=3 | m=1: covers=47 ker=1 stat=False; m=2: covers=1170 ker=1 stat=False; m=3: covers=20485 ker=1 stat=True
+(972,143) e=2 K=3 M=2 | 1^9 3^35 9^8 | h_lin=3 h_stat=3 | m=1: covers=41 ker=3 stat=False; m=2: covers=861 ker=3 stat=False; m=3: covers=12348 ker=1 stat=True
+(972,143) e=4 K=3 M=2 | 1^9 3^35 9^8 | h_lin=3 h_stat=3 | m=1: covers=41 ker=3 stat=False; m=2: covers=861 ker=3 stat=False; m=3: covers=12348 ker=1 stat=True
+(972,159) e=1 K=3 M=2 | 1^9 3^35 9^8 | h_lin=1 h_stat=3 | m=1: covers=41 ker=1 stat=False; m=2: covers=861 ker=1 stat=False; m=3: covers=12348 ker=1 stat=True
+(972,159) e=2 K=3 M=2 | 1^9 3^35 9^8 | h_lin=1 h_stat=3 | m=1: covers=41 ker=1 stat=False; m=2: covers=861 ker=1 stat=False; m=3: covers=12348 ker=1 stat=True
+(972,164) e=1 K=3 M=2 | 1^9 3^17 9^10 | h_lin=3 h_stat=3 | m=1: covers=23 ker=3 stat=False; m=2: covers=276 ker=3 stat=False; m=3: covers=2309 ker=1 stat=True
+(972,164) e=4 K=3 M=2 | 1^9 3^17 9^10 | h_lin=3 h_stat=3 | m=1: covers=23 ker=3 stat=False; m=2: covers=276 ker=3 stat=False; m=3: covers=2309 ker=1 stat=True
+(972,877) e=1 K=3 M=2 | 1^9 3^3 4^18 6^6 12^3 | h_lin=2 h_stat=>3 | m=1: covers=9 ker=27 stat=False; m=2: covers=87 ker=1 stat=False; m=3: covers=596 ker=1 stat=False
+(972,877) e=2 K=3 M=2 | 1^9 3^3 4^18 6^6 12^3 | h_lin=2 h_stat=>3 | m=1: covers=9 ker=27 stat=False; m=2: covers=87 ker=1 stat=False; m=3: covers=596 ker=1 stat=False
+(800,1065) e=1 K=5 M=2 | 1^25 4^25 5^15 | h_lin=1 h_stat=>3 | m=1: covers=160 ker=1 stat=False; m=2: covers=13830 ker=1 stat=False; m=3: covers=None ker=1 stat=None
+(800,1065) e=2 K=5 M=2 | 1^25 4^25 5^15 | h_lin=1 h_stat=>3 | m=1: covers=160 ker=1 stat=False; m=2: covers=13830 ker=1 stat=False; m=3: covers=None ker=1 stat=None
+(800,1065) e=3 K=5 M=2 | 1^25 4^25 5^15 | h_lin=1 h_stat=>3 | m=1: covers=160 ker=1 stat=False; m=2: covers=13830 ker=1 stat=False; m=3: covers=None ker=1 stat=None
+(800,1065) e=7 K=5 M=2 | 1^25 4^25 5^15 | h_lin=1 h_stat=>3 | m=1: covers=160 ker=1 stat=False; m=2: covers=13830 ker=1 stat=False; m=3: covers=None ker=1 stat=None

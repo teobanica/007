@@ -1,0 +1,28 @@
+start frazier
+K=6 M=2 n=36 groups=14 uniform structures=1 time=121ms
+K=6 M=2 n=72 groups=50 uniform structures=1 time=122ms
+K=6 M=2 n=108 groups=45 uniform structures=4 time=574ms
+K=6 M=2 n=144 groups=197 uniform structures=5 time=597ms
+K=6 M=2 n=180 groups=37 uniform structures=1 time=182ms
+K=6 M=2 n=216 groups=177 uniform structures=4 time=882ms
+K=6 M=2 n=252 groups=46 uniform structures=25 time=1541ms
+K=6 M=2 n=288 groups=1045 uniform structures=13 time=3015ms
+K=6 M=2 n=324 groups=176 uniform structures=31 time=5235ms
+K=6 M=2 n=360 groups=162 uniform structures=1 time=392ms
+K=6 M=2 n=396 groups=30 uniform structures=1 time=6944ms
+K=6 M=2 n=432 groups=775 uniform structures=22 time=76450ms
+K=6 M=2 n=468 groups=55 uniform structures=25 time=137015ms
+K=6 M=2 n=504 groups=202 uniform structures=25 time=97262ms
+K=6 M=2 n=540 groups=119 uniform structures=4 time=21644ms
+K=6 M=2 n=576 skipped (8681 groups)
+K=6 M=2 n=612 groups=36 uniform structures=1 time=11686ms
+K=6 M=2 n=648 groups=757 uniform structures=35 time=161828ms
+K=6 M=2 n=684 groups=51 uniform structures=25 time=172924ms
+K=6 M=2 n=720 groups=840 uniform structures=5 time=45001ms
+K=2 M=4 n=16 groups=14 uniform structures=1 time=148ms
+K=2 M=4 n=32 groups=51 uniform structures=63 time=4029ms
+K=2 M=4 n=48 groups=52 uniform structures=35 time=981ms
+K=2 M=4 n=64 groups=267 uniform structures=1451 time=273234ms
+K=2 M=4 n=80 groups=52 uniform structures=61 time=1546ms
+K=2 M=4 n=96 groups=231 uniform structures=2205 time=82619ms
+K=2 M=4 n=112 groups=43 uniform structures=95 time=2359ms

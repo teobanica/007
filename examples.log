@@ -1,0 +1,395 @@
+== Z_2^2 : |Gamma| = 4, K = 2, M = 2
+   classes: 4, irreducible dims: {1: 4}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 4 of 4
+   flat covers (iso classes of flat reps): 2
+   irreducibles used by flat covers: 4
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/2
+      [1, 1]  1/2
+== Z_2^3 : |Gamma| = 8, K = 2, M = 3
+   classes: 8, irreducible dims: {1: 8}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 8 of 8
+   flat covers (iso classes of flat reps): 4
+   irreducibles used by flat covers: 8
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/4
+      [1, 1]  1/4
+      [1, 1]  1/4
+      [1, 1]  1/4
+== Z_3^2 : |Gamma| = 9, K = 3, M = 2
+   classes: 9, irreducible dims: {1: 9}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 9 of 9
+   flat covers (iso classes of flat reps): 6
+   irreducibles used by flat covers: 9
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1]  1/3
+      [1, 1, 1]  1/3
+      [1, 1, 1]  1/3
+== Z_2^4 : |Gamma| = 16, K = 2, M = 4
+   classes: 16, irreducible dims: {1: 16}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 16 of 16
+   flat covers (iso classes of flat reps): 8
+   irreducibles used by flat covers: 16
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [1, 1]  1/8
+== Z_3^3 : |Gamma| = 27, K = 3, M = 3
+   classes: 27, irreducible dims: {1: 27}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 27 of 27
+   flat covers (iso classes of flat reps): 36
+   irreducibles used by flat covers: 27
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+== Z_4^2 : |Gamma| = 16, K = 4, M = 2
+   classes: 16, irreducible dims: {1: 16}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 16 of 16
+   flat covers (iso classes of flat reps): 24
+   irreducibles used by flat covers: 16
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1, 1]  1/4
+      [1, 1, 1, 1]  1/8
+      [1, 1, 1, 1]  1/8
+      [1, 1, 1, 1]  1/8
+      [1, 1, 1, 1]  1/8
+      [1, 1, 1, 1]  1/8
+      [1, 1, 1, 1]  1/8
+== Z_5^2 : |Gamma| = 25, K = 5, M = 2
+   classes: 25, irreducible dims: {1: 25}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 25 of 25
+   flat covers (iso classes of flat reps): 120
+   irreducibles used by flat covers: 25
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  3/20
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  3/20
+      [1, 1, 1, 1, 1]  1/10
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/10
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/20
+      [1, 1, 1, 1, 1]  1/10
+== D_4 (order 8) : |Gamma| = 8, K = 2, M = 2
+   classes: 5, irreducible dims: {1: 4, 2: 1}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 5 of 5
+   flat covers (iso classes of flat reps): 3
+   irreducibles used by flat covers: 5
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/4
+      [1, 1]  1/4
+      [2]  1/2
+== D_6 (order 12) : |Gamma| = 12, K = 2, M = 2
+   classes: 6, irreducible dims: {1: 4, 2: 2}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 6 of 6
+   flat covers (iso classes of flat reps): 4
+   irreducibles used by flat covers: 6
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/6
+      [1, 1]  1/6
+      [2]  1/3
+      [2]  1/3
+== D_8 (order 16) : |Gamma| = 16, K = 2, M = 2
+   classes: 7, irreducible dims: {1: 4, 2: 3}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 7 of 7
+   flat covers (iso classes of flat reps): 5
+   irreducibles used by flat covers: 7
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/8
+      [1, 1]  1/8
+      [2]  1/4
+      [2]  1/4
+      [2]  1/4
+== D_10 (order 20) : |Gamma| = 20, K = 2, M = 2
+   classes: 8, irreducible dims: {1: 4, 2: 4}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 8 of 8
+   flat covers (iso classes of flat reps): 6
+   irreducibles used by flat covers: 8
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/10
+      [1, 1]  1/10
+      [2]  1/5
+      [2]  1/5
+      [2]  1/5
+      [2]  1/5
+== D_12 (order 24) : |Gamma| = 24, K = 2, M = 2
+   classes: 9, irreducible dims: {1: 4, 2: 5}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 9 of 9
+   flat covers (iso classes of flat reps): 7
+   irreducibles used by flat covers: 9
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/12
+      [1, 1]  1/12
+      [2]  1/6
+      [2]  1/6
+      [2]  1/6
+      [2]  1/6
+      [2]  1/6
+== D_16 (order 32) : |Gamma| = 32, K = 2, M = 2
+   classes: 11, irreducible dims: {1: 4, 2: 7}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 11 of 11
+   flat covers (iso classes of flat reps): 9
+   irreducibles used by flat covers: 11
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/16
+      [1, 1]  1/16
+      [2]  1/8
+      [2]  1/8
+      [2]  1/8
+      [2]  1/8
+      [2]  1/8
+      [2]  1/8
+      [2]  1/8
+== D_20 (order 40) : |Gamma| = 40, K = 2, M = 2
+   classes: 13, irreducible dims: {1: 4, 2: 9}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 13 of 13
+   flat covers (iso classes of flat reps): 11
+   irreducibles used by flat covers: 13
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/20
+      [1, 1]  1/20
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+      [2]  1/10
+== D_24 (order 48) : |Gamma| = 48, K = 2, M = 2
+   classes: 15, irreducible dims: {1: 4, 2: 11}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 15 of 15
+   flat covers (iso classes of flat reps): 13
+   irreducibles used by flat covers: 15
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/24
+      [1, 1]  1/24
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+      [2]  1/12
+== Heisenberg H_2 (order 8) : |Gamma| = 8, K = 2, M = 2
+   classes: 5, irreducible dims: {1: 4, 2: 1}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 5 of 5
+   flat covers (iso classes of flat reps): 3
+   irreducibles used by flat covers: 5
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1]  1/4
+      [1, 1]  1/4
+      [2]  1/2
+== Heisenberg H_3 (order 27) : |Gamma| = 27, K = 3, M = 2
+   classes: 11, irreducible dims: {1: 9, 3: 2}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 11 of 11
+   flat covers (iso classes of flat reps): 8
+   irreducibles used by flat covers: 11
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [1, 1, 1]  1/9
+      [3]  1/3
+      [3]  1/3
+== Heisenberg H_4 (order 64) : |Gamma| = 64, K = 4, M = 2
+   classes: 22, irreducible dims: {1: 16, 2: 4, 4: 2}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 22 of 22
+   flat covers (iso classes of flat reps): 36
+   irreducibles used by flat covers: 22
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1, 1]  1/16
+      [1, 1, 1, 1]  1/32
+      [1, 1, 1, 1]  1/32
+      [1, 1, 1, 1]  1/32
+      [1, 1, 1, 1]  1/32
+      [1, 1, 2]  1/32
+      [1, 1, 1, 1]  1/32
+      [1, 1, 2]  1/32
+      [2, 2]  1/8
+      [2, 2]  3/32
+      [4]  1/4
+      [4]  1/4
+== Heisenberg H_5 (order 125) : |Gamma| = 125, K = 5, M = 2
+   classes: 29, irreducible dims: {1: 25, 5: 4}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 29 of 29
+   flat covers (iso classes of flat reps): 124
+   irreducibles used by flat covers: 29
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights (cover dims -> weight):
+      [1, 1, 1, 1, 1]  2/95
+      [1, 1, 1, 1, 1]  9/475
+      [1, 1, 1, 1, 1]  4/475
+      [1, 1, 1, 1, 1]  12/475
+      [1, 1, 1, 1, 1]  3/475
+      [1, 1, 1, 1, 1]  8/475
+      [1, 1, 1, 1, 1]  7/475
+      [1, 1, 1, 1, 1]  8/475
+      [1, 1, 1, 1, 1]  1/475
+      [1, 1, 1, 1, 1]  2/475
+      [1, 1, 1, 1, 1]  9/475
+      [1, 1, 1, 1, 1]  2/475
+      [1, 1, 1, 1, 1]  7/475
+      [1, 1, 1, 1, 1]  1/475
+      [1, 1, 1, 1, 1]  2/475
+      [1, 1, 1, 1, 1]  4/475
+      [1, 1, 1, 1, 1]  6/475
+      [5]  1/5
+      [5]  1/5
+      [5]  1/5
+      [5]  1/5
+== Heisenberg H_6 (order 216) : |Gamma| = 216, K = 6, M = 2
+   classes: 55, irreducible dims: {1: 36, 2: 9, 3: 8, 6: 2}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 55 of 55
+   flat covers (iso classes of flat reps): 1036
+   irreducibles used by flat covers: 55
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights: 42 covers in the support
+== Heisenberg H_7 (order 343) : |Gamma| = 343, K = 7, M = 2
+   classes: 55, irreducible dims: {1: 49, 7: 6}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 55 of 55
+   flat covers (iso classes of flat reps): 5046
+   irreducibles used by flat covers: 55
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights: 43 covers in the support
+== Heisenberg H_8 (order 512) : |Gamma| = 512, K = 8, M = 2
+   classes: 92, irreducible dims: {1: 64, 2: 16, 4: 8, 8: 4}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 92 of 92
+   flat covers (iso classes of flat reps): 54068
+   irreducibles used by flat covers: 92
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights: 78 covers in the support
+== Heisenberg H_9 (order 729) : |Gamma| = 729, K = 9, M = 2
+   classes: 105, irreducible dims: {1: 81, 3: 18, 9: 6}
+   S_M symmetric: True
+   diagonal kernel abelian: True
+   admissible irreducibles: 105 of 105
+   flat covers (iso classes of flat reps): 376326
+   irreducibles used by flat covers: 105
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: stationary
+   exact weights: 89 covers in the support
+== (Z_3*Z_3)_met / 2A : |Gamma| = 144, K = 3, M = 2
+   classes: 16, irreducible dims: {1: 9, 3: 6, 9: 1}
+   S_M symmetric: True
+   diagonal kernel abelian: False
+   admissible irreducibles: 15 of 16
+   flat covers (iso classes of flat reps): 12
+   irreducibles used by flat covers: 15
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: not stationary
+   irreducible #15 (dim 9) occurs in no flat representation
+== (Z_3*Z_3)_met / 5A : |Gamma| = 5625, K = 3, M = 2
+   classes: 121, irreducible dims: {1: 9, 3: 48, 9: 64}
+   S_M symmetric: True
+   diagonal kernel abelian: False
+   admissible irreducibles: 57 of 121
+   flat covers (iso classes of flat reps): 54
+   irreducibles used by flat covers: 57
+   common kernel of flat reps: order 1 -> flat linear: True
+   stationarity: not stationary
+   irreducible #57 (dim 9) occurs in no flat representation

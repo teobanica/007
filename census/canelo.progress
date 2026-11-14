@@ -1,0 +1,65 @@
+start canelo
+K=4 M=2 n=1008 groups=954 uniform structures=5 time=23633ms
+K=4 M=2 n=1024 skipped (49487367289 groups)
+K=4 M=2 n=1040 groups=231 uniform structures=81 time=212427ms
+K=4 M=2 n=1056 groups=1028 uniform structures=1 time=7649ms
+K=4 M=2 n=1072 groups=42 uniform structures=1 time=4549ms
+K=4 M=2 n=1088 groups=1681 uniform structures=63 time=193997ms
+K=4 M=2 n=1104 groups=170 uniform structures=1 time=6084ms
+K=4 M=2 n=1120 groups=1092 uniform structures=9 time=34996ms
+K=4 M=2 n=1136 groups=42 uniform structures=1 time=4885ms
+K=4 M=2 n=1152 skipped (157877 groups)
+K=4 M=2 n=1168 groups=53 uniform structures=9 time=20448ms
+K=4 M=2 n=1184 groups=235 uniform structures=9 time=29736ms
+K=4 M=2 n=1200 groups=1040 uniform structures=61 time=213172ms
+K=4 M=2 n=1216 groups=1387 uniform structures=7 time=34051ms
+K=4 M=2 n=1232 groups=153 uniform structures=1 time=6785ms
+K=4 M=2 n=1248 groups=1460 uniform structures=9 time=65606ms
+K=4 M=2 n=1264 groups=42 uniform structures=1 time=5379ms
+K=4 M=2 n=1280 skipped (1116461 groups)
+K=4 M=2 n=1296 skipped (3609 groups)
+K=4 M=2 n=1312 groups=244 uniform structures=9 time=32737ms
+K=4 M=2 n=1328 groups=42 uniform structures=1 time=5681ms
+K=4 M=2 n=1344 skipped (11720 groups)
+K=4 M=2 n=1360 groups=245 uniform structures=81 time=281420ms
+K=4 M=2 n=1376 groups=195 uniform structures=1 time=7399ms
+K=4 M=2 n=1392 groups=198 uniform structures=9 time=47573ms
+K=4 M=2 n=1408 skipped (19324 groups)
+K=4 M=2 n=1424 groups=53 uniform structures=9 time=25104ms
+K=4 M=2 n=1440 skipped (5958 groups)
+K=4 M=2 n=1456 groups=179 uniform structures=9 time=59564ms
+K=4 M=2 n=1472 groups=1387 uniform structures=7 time=40458ms
+K=4 M=2 n=1488 groups=222 uniform structures=1 time=8504ms
+K=4 M=2 n=1504 groups=195 uniform structures=1 time=8343ms
+K=4 M=2 n=1520 groups=178 uniform structures=9 time=35052ms
+K=4 M=2 n=1536 skipped (408641062 groups)
+K=4 M=2 n=1552 groups=54 uniform structures=9 time=27019ms
+K=4 M=2 n=1568 groups=928 uniform structures=15 time=52584ms
+K=4 M=2 n=1584 groups=697 uniform structures=5 time=45627ms
+K=4 M=2 n=1600 skipped (10281 groups)
+K=4 M=2 n=1616 groups=51 uniform structures=9 time=28178ms
+K=4 M=2 n=1632 groups=1213 uniform structures=9 time=84766ms
+K=4 M=2 n=1648 groups=42 uniform structures=1 time=7655ms
+K=4 M=2 n=1664 skipped (21507 groups)
+K=4 M=2 n=1680 groups=1005 uniform structures=9 time=43864ms
+K=4 M=2 n=1696 groups=235 uniform structures=9 time=40827ms
+K=4 M=2 n=1712 groups=42 uniform structures=1 time=7808ms
+K=4 M=2 n=1728 skipped (47937 groups)
+K=4 M=2 n=1744 groups=51 uniform structures=9 time=30871ms
+K=4 M=2 n=1760 groups=1285 uniform structures=9 time=53790ms
+K=4 M=2 n=1776 groups=260 uniform structures=9 time=62341ms
+K=4 M=2 n=1792 skipped (1083553 groups)
+K=4 M=2 n=1808 groups=54 uniform structures=9 time=31101ms
+K=4 M=2 n=1824 groups=1264 uniform structures=1 time=14167ms
+K=4 M=2 n=1840 groups=178 uniform structures=9 time=42690ms
+K=4 M=2 n=1856 groups=1630 uniform structures=63 time=294946ms
+K=4 M=2 n=1872 groups=1096 uniform structures=45 time=259818ms
+K=4 M=2 n=1888 groups=195 uniform structures=1 time=10794ms
+K=4 M=2 n=1904 groups=186 uniform structures=9 time=75541ms
+K=4 M=2 n=1920 skipped (241004 groups)
+K=4 M=2 n=1936 groups=167 uniform structures=5 time=24810ms
+K=4 M=2 n=1952 groups=235 uniform structures=9 time=47565ms
+K=4 M=2 n=1968 groups=203 uniform structures=9 time=69837ms
+K=4 M=2 n=1984 groups=1388 uniform structures=7 time=54885ms
+K=4 M=2 n=2000 groups=963 uniform structures=265 time=1292903ms
+finished

@@ -1,0 +1,19 @@
+N=2: |F_N| = 8
+N=3: |F_N| = 64
+   (ab)^4 = 1                               True
+   (ab)^2 central: [(ab)^2, c] = 1          True
+   abc = cba  (half-liberation)             False
+   (abc)^2 = 1                              False
+   (abc)^4 = 1                              True
+   (ab)^2 = (ba)^2                          True
+   abab = baba                              True
+   [ab, ac]^2 = 1                           True
+N=4: |F_N| = 1024
+   (ab)^4 = 1                               True
+   (ab)^2 central: [(ab)^2, c] = 1          True
+   abc = cba  (half-liberation)             False
+   (abc)^2 = 1                              False
+   (abc)^4 = 1                              True
+   (ab)^2 = (ba)^2                          True
+   abab = baba                              True
+   [ab, ac]^2 = 1                           True

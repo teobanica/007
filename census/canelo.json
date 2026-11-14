@@ -1,0 +1,190 @@
+{"n": 1008, "i": 97, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 8208, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^248"}
+{"n": 1008, "i": 694, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 200, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^56"}
+{"n": 1008, "i": 694, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 200, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^56"}
+{"n": 1040, "i": 75, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 8728, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^256"}
+{"n": 1040, "i": 129, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 88, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^64"}
+{"n": 1040, "i": 129, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 88, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^64"}
+{"n": 1040, "i": 136, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 88, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^64"}
+{"n": 1040, "i": 136, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 88, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^64"}
+{"n": 1040, "i": 143, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 460, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^48 4^52"}
+{"n": 1040, "i": 143, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 460, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^48 4^52"}
+{"n": 1040, "i": 150, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^60"}
+{"n": 1040, "i": 150, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^60"}
+{"n": 1056, "i": 189, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 8994, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^260"}
+{"n": 1072, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 9264, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^264"}
+{"n": 1088, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 2500, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^132 4^34"}
+{"n": 1088, "i": 312, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 9538, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^268"}
+{"n": 1088, "i": 316, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 2500, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^132 4^34"}
+{"n": 1088, "i": 1417, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 100, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^66"}
+{"n": 1088, "i": 1417, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 100, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^66"}
+{"n": 1088, "i": 1423, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 130, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^12 4^64"}
+{"n": 1088, "i": 1423, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 130, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^12 4^64"}
+{"n": 1088, "i": 1427, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 100, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^66"}
+{"n": 1088, "i": 1427, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 100, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^66"}
+{"n": 1104, "i": 70, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 9816, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^272"}
+{"n": 1120, "i": 190, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 10098, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^276"}
+{"n": 1120, "i": 289, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 522, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^52 4^56"}
+{"n": 1120, "i": 289, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 522, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^52 4^56"}
+{"n": 1136, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 10384, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^280"}
+{"n": 1168, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 10968, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^288"}
+{"n": 1168, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 96, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^72"}
+{"n": 1168, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 96, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^72"}
+{"n": 1184, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 11266, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^292"}
+{"n": 1184, "i": 197, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 106, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^72"}
+{"n": 1184, "i": 197, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 106, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^72"}
+{"n": 1200, "i": 72, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 11568, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^296"}
+{"n": 1200, "i": 114, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^72"}
+{"n": 1200, "i": 114, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^72"}
+{"n": 1200, "i": 494, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^8 12^8"}
+{"n": 1200, "i": 494, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^8 12^8"}
+{"n": 1200, "i": 746, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^72"}
+{"n": 1200, "i": 746, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^72"}
+{"n": 1200, "i": 753, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 588, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^56 4^60"}
+{"n": 1200, "i": 753, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 588, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^56 4^60"}
+{"n": 1200, "i": 954, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^8 4^8 8^4 16^3"}
+{"n": 1200, "i": 954, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^8 4^8 8^4 16^3"}
+{"n": 1216, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 3096, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^148 4^38"}
+{"n": 1216, "i": 312, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 11874, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^300"}
+{"n": 1216, "i": 316, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 3096, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^148 4^38"}
+{"n": 1232, "i": 69, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 12184, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^304"}
+{"n": 1248, "i": 255, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 12498, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^308"}
+{"n": 1248, "i": 488, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 186, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^20 4^72"}
+{"n": 1248, "i": 488, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 186, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^20 4^72"}
+{"n": 1264, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 12816, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^312"}
+{"n": 1312, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 13794, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^324"}
+{"n": 1312, "i": 197, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 114, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^80"}
+{"n": 1312, "i": 197, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 114, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^80"}
+{"n": 1328, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 14128, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^328"}
+{"n": 1360, "i": 75, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 14808, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^336"}
+{"n": 1360, "i": 133, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 108, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^84"}
+{"n": 1360, "i": 133, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 108, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^84"}
+{"n": 1360, "i": 140, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 108, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^84"}
+{"n": 1360, "i": 140, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 108, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^84"}
+{"n": 1360, "i": 147, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 732, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^64 4^68"}
+{"n": 1360, "i": 147, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 732, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^64 4^68"}
+{"n": 1360, "i": 154, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 168, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^80"}
+{"n": 1360, "i": 154, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 168, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^80"}
+{"n": 1376, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 15154, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^340"}
+{"n": 1392, "i": 72, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 15504, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^344"}
+{"n": 1392, "i": 114, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 132, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^84"}
+{"n": 1392, "i": 114, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 132, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^84"}
+{"n": 1424, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 16216, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^352"}
+{"n": 1424, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 112, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^88"}
+{"n": 1424, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 112, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^88"}
+{"n": 1456, "i": 71, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 16944, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^360"}
+{"n": 1456, "i": 104, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 228, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^84"}
+{"n": 1456, "i": 104, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 228, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^84"}
+{"n": 1472, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 4480, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^180 4^46"}
+{"n": 1472, "i": 312, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 17314, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^364"}
+{"n": 1472, "i": 316, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 4480, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^180 4^46"}
+{"n": 1488, "i": 97, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 17688, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^368"}
+{"n": 1504, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 18066, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^372"}
+{"n": 1520, "i": 71, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 18448, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^376"}
+{"n": 1520, "i": 104, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 892, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^72 4^76"}
+{"n": 1520, "i": 104, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 892, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^72 4^76"}
+{"n": 1552, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 19224, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^384"}
+{"n": 1552, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^96"}
+{"n": 1552, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 120, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^96"}
+{"n": 1568, "i": 37, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 19618, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^388"}
+{"n": 1568, "i": 385, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 130, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^96"}
+{"n": 1568, "i": 385, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 130, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^96"}
+{"n": 1584, "i": 70, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 20016, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^392"}
+{"n": 1584, "i": 473, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 392, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^40 4^88"}
+{"n": 1584, "i": 473, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 392, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^40 4^88"}
+{"n": 1616, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 20824, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^400"}
+{"n": 1616, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 124, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^100"}
+{"n": 1616, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 124, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^100"}
+{"n": 1632, "i": 191, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 21234, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^404"}
+{"n": 1632, "i": 307, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 210, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^20 4^96"}
+{"n": 1632, "i": 307, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 210, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^20 4^96"}
+{"n": 1648, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 21648, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^408"}
+{"n": 1680, "i": 380, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 22488, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^416"}
+{"n": 1680, "i": 646, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1068, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^80 4^84"}
+{"n": 1680, "i": 646, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1068, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^80 4^84"}
+{"n": 1696, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 22914, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^420"}
+{"n": 1696, "i": 197, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 138, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^104"}
+{"n": 1696, "i": 197, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 138, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^104"}
+{"n": 1712, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 23344, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^424"}
+{"n": 1744, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 24216, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^432"}
+{"n": 1744, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 132, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^108"}
+{"n": 1744, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 132, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^108"}
+{"n": 1760, "i": 252, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 24658, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^436"}
+{"n": 1760, "i": 461, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1162, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^84 4^88"}
+{"n": 1760, "i": 461, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1162, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^84 4^88"}
+{"n": 1776, "i": 100, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 25104, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^440"}
+{"n": 1776, "i": 162, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 156, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^108"}
+{"n": 1776, "i": 162, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 156, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^108"}
+{"n": 1808, "i": 16, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 26008, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^448"}
+{"n": 1808, "i": 44, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 136, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^112"}
+{"n": 1808, "i": 44, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 136, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^112"}
+{"n": 1824, "i": 252, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 26466, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^452"}
+{"n": 1840, "i": 71, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 26928, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^456"}
+{"n": 1840, "i": 104, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1260, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^88 4^92"}
+{"n": 1840, "i": 104, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1260, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^88 4^92"}
+{"n": 1856, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 7036, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^228 4^58"}
+{"n": 1856, "i": 312, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 27394, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^460"}
+{"n": 1856, "i": 316, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 7036, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^228 4^58"}
+{"n": 1856, "i": 1417, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^114"}
+{"n": 1856, "i": 1417, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^114"}
+{"n": 1856, "i": 1423, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 178, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^12 4^112"}
+{"n": 1856, "i": 1423, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 178, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^12 4^112"}
+{"n": 1856, "i": 1427, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^114"}
+{"n": 1856, "i": 1427, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^114"}
+{"n": 1872, "i": 100, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 27864, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^464"}
+{"n": 1872, "i": 172, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 324, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^32 4^108"}
+{"n": 1872, "i": 172, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 324, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^32 4^108"}
+{"n": 1872, "i": 649, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 44, "flatlin": 1, "kerorder": 1, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^20 8^24"}
+{"n": 1872, "i": 649, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 44, "flatlin": 1, "kerorder": 1, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^20 8^24"}
+{"n": 1872, "i": 812, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 140, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^116"}
+{"n": 1872, "i": 812, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 140, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^116"}
+{"n": 1872, "i": 819, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 512, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^48 4^104"}
+{"n": 1872, "i": 819, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 512, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^48 4^104"}
+{"n": 1888, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 28338, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^468"}
+{"n": 1904, "i": 71, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 28816, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^472"}
+{"n": 1904, "i": 106, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 256, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^112"}
+{"n": 1904, "i": 106, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 256, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^24 4^112"}
+{"n": 1936, "i": 10, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 29784, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^480"}
+{"n": 1936, "i": 112, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 144, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^120"}
+{"n": 1936, "i": 112, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 144, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^120"}
+{"n": 1952, "i": 53, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 30274, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^484"}
+{"n": 1952, "i": 197, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 154, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^120"}
+{"n": 1952, "i": 197, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 154, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^4 4^120"}
+{"n": 1968, "i": 72, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 30768, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^488"}
+{"n": 1968, "i": 116, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 168, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^120"}
+{"n": 1968, "i": 116, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 168, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^8 4^120"}
+{"n": 1984, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 8016, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^244 4^62"}
+{"n": 1984, "i": 312, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 31266, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^492"}
+{"n": 1984, "i": 316, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 8016, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^244 4^62"}
+{"n": 2000, "i": 11, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 31768, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^496"}
+{"n": 2000, "i": 30, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^124"}
+{"n": 2000, "i": 30, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^124"}
+{"n": 2000, "i": 306, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1468, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^96 4^100"}
+{"n": 2000, "i": 306, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 1468, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^96 4^100"}
+{"n": 2000, "i": 308, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 208, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^120"}
+{"n": 2000, "i": 308, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 208, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^120"}
+{"n": 2000, "i": 312, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 108, "flatlin": 0, "kerorder": 5, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^16 4^20 20^4"}
+{"n": 2000, "i": 312, "e": 16, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 108, "flatlin": 0, "kerorder": 5, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^16 4^20 20^4"}
+{"n": 2000, "i": 339, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^124"}
+{"n": 2000, "i": 339, "e": 8, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 148, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 4^124"}
+{"n": 2000, "i": 343, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 5, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^24 5^64"}
+{"n": 2000, "i": 343, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 48, "flatlin": 0, "kerorder": 5, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^24 5^64"}
+{"n": 2000, "i": 473, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 3, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 5, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 28, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 29, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 30, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 31, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 473, "e": 32, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 24, "flatlin": 0, "kerorder": 125, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^8 16^1 20^4"}
+{"n": 2000, "i": 655, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 52, "flatlin": 1, "kerorder": 1, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^28 8^24"}
+{"n": 2000, "i": 655, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 52, "flatlin": 1, "kerorder": 1, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^28 8^24"}
+{"n": 2000, "i": 795, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 1, "B": 1, "ncovers": 208, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^120"}
+{"n": 2000, "i": 795, "e": 2, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 1, "ncovers": 208, "flatlin": 1, "kerorder": 1, "stat": 1, "how": "LP", "C": 1, "degs": "1^16 2^16 4^120"}
+{"n": 2000, "i": 901, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 28, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^12 16^7"}
+{"n": 2000, "i": 901, "e": 6, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 28, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^12 16^7"}
+{"n": 2000, "i": 902, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 28, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^12 16^7"}
+{"n": 2000, "i": 902, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 28, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 4^12 16^7"}
+{"n": 2000, "i": 904, "e": 1, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 88, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^16 4^8 8^8 16^5"}
+{"n": 2000, "i": 904, "e": 4, "K": 4, "M": 2, "sym": 1, "lam": 0, "B": 0, "ncovers": 88, "flatlin": 0, "kerorder": 25, "stat": 0, "how": "not B", "C": 0, "degs": "1^16 2^16 4^8 8^8 16^5"}

@@ -1,0 +1,18 @@
+start cheetah
+K=6 M=2 n=756 groups=189 uniform structures=100 time=927301ms
+K=6 M=2 n=792 groups=137 uniform structures=1 time=15425ms
+K=6 M=2 n=828 groups=30 uniform structures=1 time=15062ms
+K=6 M=2 n=864 skipped (4725 groups)
+K=6 M=2 n=900 groups=150 uniform structures=13 time=110472ms
+K=6 M=2 n=936 groups=222 uniform structures=25 time=287353ms
+K=6 M=2 n=972 groups=900 uniform structures=215 time=2526973ms
+K=6 M=2 n=1008 groups=954 uniform structures=125 time=1360125ms
+K=6 M=2 n=1044 groups=36 uniform structures=1 time=19179ms
+K=6 M=2 n=1080 groups=583 uniform structures=4 time=39835ms
+K=6 M=2 n=1116 groups=46 uniform structures=25 time=220234ms
+K=6 M=2 n=1152 skipped (157877 groups)
+K=6 M=2 n=1188 groups=99 uniform structures=4 time=83776ms
+K=6 M=2 n=1224 groups=164 uniform structures=1 time=22891ms
+K=6 M=2 n=1260 groups=131 uniform structures=25 time=579088ms
+K=6 M=2 n=1296 skipped (3609 groups)
+K=6 M=2 n=1332 groups=61 uniform structures=25 time=244266ms

@@ -1,0 +1,910 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb}
+\usepackage[margin=30mm]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=magenta,citecolor=magenta,urlcolor=magenta]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+
+
+\begin{document}
+
+\title{Flat linearity of uniform groups}
+
+\author{Opus 5.5 and Teo 2.0}
+
+\subjclass[2020]{20C15 (20F05, 46L65)}
+\keywords{Uniform group, Flat representation, Quantum permutation group, Easy quantum group}
+
+\begin{abstract}
+A uniform group is a quotient $\mathbb Z_K^{*M}\to\Gamma\to\mathbb Z_K^M$ on which $S_M$ acts by permuting the generators, and a flat representation is a representation $\pi:\Gamma\to U_K$ such that each $\pi(g_i)$ has the $K$-th roots of unity as eigenvalues. These are the quasi-flat matrix models of the group duals $\widehat{\Gamma}\subset S_{KM}^+$. We show that $\mathbb Z_K^{*M}$ is flat linear, in the sense that its flat representations separate points, and that for finite groups, flat linearity and stationarity reduce to exact covering problems. We use this to compute a census, and to prove results on the Heisenberg and metabelian groups.
+\end{abstract}
+
+\maketitle
+
+\tableofcontents
+
+\section*{Introduction}
+
+The quantum permutation group $S_N^+$ of Wang \cite{wa2}, which is a compact quantum group in the sense of Woronowicz \cite{wo1}, is defined via the magic matrices $u=(u_{ij})$, whose entries are projections, summing up to 1 on each row and each column. This quantum group has many interesting closed subgroups $G\subset S_N^+$, and a natural way of investigating them is via random matrix models, $\pi:C(G)\to M_K(C(X))$. Such a model is called inner faithful when its Hopf image, in the sense of \cite{bbi}, is the whole $C(G)$, and stationary when it recovers the Haar integration over $G$.
+
+The simplest such models are the flat ones, where the standard coordinates $u_{ij}\in C(G)$ are mapped into projections of rank 1, as in \cite{bne}, and their quasi-flat versions, where the coordinates $u_{ij}$ are mapped into projections of rank $\leq1$. When $G$ is quasi-transitive, with orbits of size $K$, there is a universal quasi-flat model, and the question is whether this model is inner faithful, or even stationary. See \cite{bc1,bc2,bfr,bne}.
+
+In the group dual case, $G=\widehat{\Gamma}$, the situation is as follows:
+
+\begin{enumerate}
+\item The work of Bichon \cite{bic} shows that the quasi-transitive examples of product type come from intermediate quotients $\mathbb Z_K^{*M}\to\Gamma\to\mathbb Z_K^M$, and the quasi-flat models become group representations $\pi:\Gamma\to U_K$, with each $\pi(g_i)$ having the $K$-th roots of unity as eigenvalues.
+
+\item Assuming that $S_M$ acts on $\Gamma$ by permuting the generators, we are led to the uniform groups from \cite{bc1,bc2}, and to the questions whether the flat representations separate the points, which we call flat linearity, and whether they recover the Haar functional, which we call stationarity.
+
+\item At $K=2$ the generators are involutions, $\Gamma$ is a reflection group, and these questions are related to the work of Raum and Weber \cite{rw2,rwe}, who showed that the strongly symmetric reflection groups classify the group-theoretical easy quantum groups.
+
+\item At $K\geq3$, the uniform groups are expected to play a key role in the classification of the unitary easy quantum groups, in the hyperoctahedral case, complementary to the non-hyperoctahedral case and the noncrossing case, investigated by Mang-Weber and Tarrago-Weber, see \cite{mw1,tw}.
+\end{enumerate}
+
+In quantum group terms, flat linearity means that the universal quasi-flat model is inner faithful, in the sense of \cite{bbi}, and stationarity means that this model is stationary, in the sense of \cite{bfr}. Also, at $K=2$, our results concern the matrix models of the group-theoretical easy quantum groups, at the level of their diagonal group duals.
+
+The present paper is a systematic study of these questions, with an emphasis on explicit, computer-assisted group theory. Our first result concerns the free products, completing the inner faithfulness result from \cite{bfr}:
+
+\medskip
+
+\noindent {\bf Theorem A.} {\em The free product $\mathbb Z_K^{*M}$ is flat linear. More precisely, the faithful flat representations of $\mathbb Z_K^{*M}$ form a dense $G_\delta$ subset of the space of all flat representations.}
+
+\medskip
+
+In quantum group terms, this says that the universal quasi-flat model of the free product $\widehat{\mathbb Z}_K\,\widehat{*}\ldots\widehat{*}\,\widehat{\mathbb Z}_K\subset S_{KM}^+$, in the sense of Wang \cite{wa1}, is inner faithful, as stated in \cite{bfr}. The proof uses a complexification argument, reducing the question to the existence of suitable elliptic elements of $PSL_2(\mathbb R)$. In the finite case, our main observation is that everything becomes exact and computable:
+
+\medskip
+
+\noindent {\bf Theorem B.} {\em For a finite uniform group $\Gamma$, the flat representations correspond, up to unitary conjugacy, to the flat covers, namely the sets $S$ of irreducible representations whose generator spectra exactly cover the $K$-th roots of unity. Moreover:
+\begin{enumerate}
+\item $\Gamma$ is flat linear precisely when the admissible irreducibles, which are those appearing in flat covers, have trivial common kernel.
+
+\item $\Gamma$ is stationary precisely when the vector $(K\dim(\tau)/|\Gamma|)_{\tau\in{\rm Irr}(\Gamma)}$ is a convex combination of indicator vectors of flat covers.
+\end{enumerate}
+In particular, stationarity requires all irreducibles to have dimension $\leq K$.}
+
+\medskip
+
+This leads to an algorithm, which computes the character table numerically, but uses only integer data at the end, and decides stationarity by a rational linear program, with exact certificates. Running it on the basic families, we obtain:
+
+\medskip
+
+\noindent {\bf Theorem C.} {\em The following hold:
+\begin{enumerate}
+\item If the diagonal kernel $\Lambda_\Gamma=\ker(\Gamma\to\mathbb Z_K)$, with $g_i\to1$, is abelian, then $\Gamma$ is stationary. In particular, the dihedral groups, the Heisenberg groups $H_K$, and more generally the uniform groups with $M=2$ which are nilpotent of class $\leq2$, are all stationary.
+
+\item The groups $\Gamma_{K,q}=(\mathbb Z_K*\mathbb Z_K)_{met}/qA$ with $K\geq3$ prime, and $q\neq K$ prime, are flat linear, but not stationary.
+
+\item In the case $q|K$, the groups $\Gamma_{3,3}$ and $\Gamma_{4,2}$, of order $729$ and $8192$, are not flat linear.
+\end{enumerate}}
+
+\medskip
+
+Here $G_{met}=G/G''$ denotes the metabelianization of a group $G$, namely its largest metabelian quotient, and with $G=\mathbb Z_K*\mathbb Z_K$, the derived subgroup $A=G'/G''$ of $G_{met}$ is free abelian of rank $(K-1)^2$, so that $\Gamma_{K,q}$ is obtained by killing the $q$-th powers in $A$. The first assertion comes from Thoma's construction \cite{tho}, the point being that the representations induced from the characters of the diagonal kernel are automatically flat. The second assertion extends the main negative result of \cite{bc2}, concerning the case $K=3$, $q=2$, which appears here as a direct consequence of Theorem B. The third assertion, which is computer-assisted, shows that the hypothesis $q\nmid K$ is needed.
+
+We have as well a systematic census, based on the SmallGroups library \cite{bes} of the GAP system, covering the uniform groups with $M=2$ and $K\in\{3,4,5,6,7,8,9\}$, with $M=3$ and $K\in\{2,3\}$, and with $M=4$ and $K=2$, up to orders ranging between $112$ and $2000$, depending on the parameters. This census shows that none of the obvious conjectures that can be naively formulated hold:
+
+\medskip
+
+\noindent {\bf Theorem D.} {\em The following happen:
+\begin{enumerate}
+\item The group $A_4\times\mathbb Z_3$ has a uniform structure which is stationary, but whose diagonal kernel is not abelian.
+
+\item The groups $\mathbb Z_3\times SL_2(\mathbb F_3)$ and $\mathbb Z_5^2\times A_5$ have uniform structures whose irreducibles are all admissible, but which are not stationary.
+
+\item The group $S_4\times\mathbb Z_2^2$ has a uniform structure, with $K=2$, $M=3$, which is not flat linear, and so does the extraspecial group $2^{1+4}_-$ of order $32$, with $K=2$, $M=4$.
+
+\item The group $\mathbb Z_3^2\times((\mathbb Z_6\times S_3)\rtimes\mathbb Z_2)$ of order $648$ has a uniform structure, with $K=6$, whose irreducibles are all admissible, which passes the dimension counting test for stationarity, but which is not stationary.
+\end{enumerate}}
+
+\medskip
+
+At $K=2$, the flat representations are given by configurations of points on the sphere $S^2$, via the Pauli matrices, the identifications of letters in the sense of Raum and Weber corresponding to collisions of points. For the strongly symmetric groups $\Gamma_N^{[s]}=\mathbb Z_2^{*N}/\langle(g_ig_j)^s\rangle$, behind the hyperoctahedral series from \cite{rw2}, we show that these are not flat linear, for $s\geq4$ finite and even, and $N\geq3$, and that at $s=4$ their flat representations factor through the free nilpotent reflection group of class 2.
+
+Regarding (4), all the other 730 admissible structures found are decided by dimension counting alone, and this example shows that stationarity depends as well on which irreducibles can appear together in a flat representation.
+
+Finally, we discuss some notions going beyond flatness: a scale of decay properties between stationarity and inner faithfulness, flatness at height $m\geq1$, and a second order flatness condition, which for the free products $\mathbb Z_K^{*M}$ is equivalent to the existence of $M$ mutually unbiased bases in $\mathbb C^K$.
+
+The paper is organized as follows: 1-2 contain generalities and the proof of Theorem A, 3-4 contain the finite group theory and a first computer census, 5-6 contain the stationarity and metabelian results, 7 discusses the reflection groups, in connection with the work of Raum and Weber, 8 contains the SmallGroups census, and 9 contains the material going beyond flatness.
+
+\section{Uniform groups, definitions}
+
+We use the following notion, from \cite{bc1,bc2}, which is motivated by the work of Bichon \cite{bic} on the group dual subgroups of the quantum permutation groups $S_N^+$:
+
+\begin{definition}
+A discrete group $\Gamma$ is called uniform, with parameters $K,M\in\mathbb N$, when:
+\begin{enumerate}
+\item $\Gamma$ is generated by $M$ elements, $\Gamma=\langle g_1,\ldots,g_M\rangle$.
+
+\item $\Gamma$ appears as an intermediate quotient $\mathbb Z_K^{*M}\to\Gamma\to\mathbb Z_K^M$, with the standard generators of $\mathbb Z_K^{*M}$ mapping to $g_1,\ldots,g_M$, and then to the standard generators of $\mathbb Z_K^M$.
+
+\item We have an action $S_M\curvearrowright\Gamma$, given by $\sigma(g_i)=g_{\sigma(i)}$.
+\end{enumerate}
+\end{definition}
+
+Observe that (2) forces each generator $g_i$ to have order exactly $K$. The motivation comes from the quantum permutation groups, as follows. Given a quotient $\mathbb Z_K^{*M}\to\Gamma$, with $N=KM$, Bichon's construction \cite{bic} produces an embedding $\widehat{\Gamma}\subset S_N^+$, the magic unitary being block-diagonal, with the $i$-th block being the Fourier transform of the $i$-th copy of $\mathbb Z_K$. Moreover, as explained in \cite{bc2,bfr}, the quasi-transitive group duals $\widehat{\Gamma}\subset S_N^+$ which are of product type, with orbits of size $K$, are precisely those coming from intermediate quotients as in (2).
+
+Regarding (3), this condition is there in order to avoid degenerate situations, such as the one exhibited in \cite{bfr}, where $\Gamma=(\mathbb Z_K*\mathbb Z_K)\times\mathbb Z_K$ has no inner faithful quasi-flat model, for the simple reason that a unitary with simple spectrum which commutes with $\pi(g_1)$ and $\pi(g_2)$ forces these 2 matrices to commute. Here are now the main examples:
+
+\begin{example}
+The following groups are uniform:
+\begin{enumerate}
+\item The free products $\mathbb Z_K^{*M}$, and the abelian groups $\mathbb Z_K^M$.
+
+\item The dihedral groups $D_n$ of order $2n$, with $n$ even, with $K=M=2$, generated by 2 reflections. Also, the infinite dihedral group $D_\infty=\mathbb Z_2*\mathbb Z_2$.
+
+\item The Heisenberg groups $H_K$ of order $K^3$, generated by $g_1,g_2$ subject to the relations $g_1^K=g_2^K=1$, with $z=[g_1,g_2]$ central and satisfying $z^K=1$.
+
+\item The universal metabelian groups $(\mathbb Z_K^{*M})_{met}=\mathbb Z_K^{*M}/(\mathbb Z_K^{*M})''$, and their quotients by characteristic subgroups of the abelian group $A=(\mathbb Z_K^{*M})'/(\mathbb Z_K^{*M})''$.
+\end{enumerate}
+\end{example}
+
+Indeed, in all cases the group $\Gamma$ appears by quotienting $\mathbb Z_K^{*M}$ by a characteristic subgroup, contained in the derived subgroup, so (2) and (3) are satisfied. For the Heisenberg group, observe that the transposition of $g_1,g_2$ maps $z\to z^{-1}$. For the metabelian quotients, the structure of $A$ was worked out in \cite{bc2}, as follows: at $M=2$, we have $A\simeq\mathbb Z^{(K-1)^2}$, which can be identified with $V\otimes V$, where $V=\mathbb Z^{K-1}$, in such a way that $g_1,g_2$ act by $m\otimes1$ and $1\otimes m$, where $m$ is the companion matrix of the polynomial $1+t+\ldots+t^{K-1}$.
+
+At $K=2$, an important class of examples is formed by the strongly symmetric reflection groups, whose defining relations are stable under all the identifications of the generators, and which are uniform as soon as they are nondegenerate, in the sense that their abelianization is $\mathbb Z_2^M$. These groups produce, via the work of Raum and Weber \cite{rw2,rwe}, the group-theoretical easy quantum groups, and they form an uncountable class. We will come back to them in section 7.
+
+In what follows we will be particularly interested in the following finite groups:
+
+\begin{definition}
+Given $K\geq2$ and a prime $q$, we set
+$$\Gamma_{K,q}=(\mathbb Z_K*\mathbb Z_K)_{met}/qA$$
+which is an extension of $\mathbb Z_K^2$ by the elementary abelian group $A/qA\simeq\mathbb Z_q^{(K-1)^2}$.
+\end{definition}
+
+For $K=3$, $q=2$, this is the group of order 144 investigated in \cite{bc2}. In general, when $q$ does not divide $K$, the extension splits by the Schur-Zassenhaus theorem, and so $\Gamma_{K,q}=A_q\rtimes\mathbb Z_K^2$, with $A_q=\mathbb Z_q^{(K-1)^2}$, the action being by $m\otimes1$ and $1\otimes m$. With these conventions, we have the following summary of the above discussion:
+
+\begin{theorem}
+The groups $\mathbb Z_K^{*M}$, $\mathbb Z_K^M$, $D_n$ with $n\in2\mathbb N\cup\{\infty\}$, $H_K$ and $\Gamma_{K,q}$ are all uniform. Moreover, $D_n$ with $n$ even is a quotient of $D_\infty$, $H_2=D_4$, and when $q\nmid K$ we have $\Gamma_{K,q}=A_q\rtimes\mathbb Z_K^2$, with $A_q=\mathbb Z_q^{(K-1)^2}$.
+\end{theorem}
+
+\begin{proof}
+This follows from the above discussion, the only assertion which remains to be checked being the formula $H_2=D_4$. But this comes from the fact that the dihedral group of order 8 is generated by 2 reflections whose commutator is the central rotation by $\pi$.
+\end{proof}
+
+\section{Flat representations, models}
+
+Let us first explain the terminology. A real matrix $A\in M_N(\mathbb R)$ can be thought of as a landscape built over the $N\times N$ grid, with height $A_{ij}$ above the point $(i,j)$, and $A$ is called flat when this landscape is flat, that is, when all its entries are equal. Given a closed subgroup $G\subset S_N^+$ and a matrix model $\pi:C(G)\to M_K(C(X))$, mapping $u_{ij}\to P_{ij}$, this applies to the matrices of ranks
+$$r^x_{ij}=rank(P_{ij}^x)$$
+which are bistochastic, with sums $K$. When $K=N$, the model is called flat when all these matrices are flat, $r^x_{ij}=1$, as in \cite{bne}. In the quasi-transitive case, with orbits of size $K$, the matrices $r^x$ cannot be flat, because $r^x_{ij}=0$ when $i,j$ are in different orbits, and the model is called quasi-flat when each $r^x$ is block-flat, with all entries equal to 1 inside the diagonal $K\times K$ blocks, which amounts in saying that we have $rank(P_{ij}^x)\leq1$, for any $i,j,x$. See \cite{bc2,bfr}.
+
+In the group dual case, this flatness condition becomes a spectral condition. Indeed, let $w=e^{2\pi i/K}$, and consider the subgroup $\widehat{\Gamma}\subset S_{KM}^+$ coming from a quotient $\mathbb Z_K^{*M}\to\Gamma$. Bichon's construction \cite{bic} produces a block-diagonal magic matrix $u=diag(u^{(1)},\ldots,u^{(M)})$, the entries of the $i$-th block being the spectral projections of the generator $g_i\in C^*(\Gamma)$:
+$$u^{(i)}_{ab}=\frac{1}{K}\sum_{m=0}^{K-1}w^{-(b-a)m}g_i^m$$
+
+Thus, for the model coming from a representation $\pi:\Gamma\to U_K$, the rank of $\pi(u^{(i)}_{ab})$ is the multiplicity of $w^{b-a}$ as an eigenvalue of $\pi(g_i)$. We conclude that the rank matrix is block-flat precisely when each $\pi(g_i)$ has all the $K$-th roots of unity as eigenvalues, each with multiplicity 1. With $W=diag(w,w^2,\ldots,w^K)\in U_K$, this leads to:
+
+\begin{definition}
+Let $\Gamma=\langle g_1,\ldots,g_M\rangle$ be uniform.
+\begin{enumerate}
+\item A representation $\pi:\Gamma\to U_K$ is called flat when each $\pi(g_i)$ is conjugate to $W$, that is, has all the $K$-th roots of unity as eigenvalues, with multiplicity $1$.
+
+\item The space of flat representations is denoted $X_\Gamma$, and the universal flat model is $\pi_\Gamma:C^*(\Gamma)\to M_K(C(X_\Gamma))$, given by $\pi_\Gamma(g)(\pi)=\pi(g)$.
+\end{enumerate}
+\end{definition}
+
+Here $X_\Gamma$ is a compact real algebraic subset of $U_K^M$, namely the set of the tuples $(V_1,\ldots,V_M)$ of conjugates of $W$ satisfying the relations of $\Gamma$. This is a particular case of a representation variety, in the sense of \cite{lma,sik}. As explained in \cite{bc2,bfr}, via the Fourier transform over $\mathbb Z_K$, the model $\pi_\Gamma$ is the universal quasi-flat model of the corresponding group dual, $\widehat{\Gamma}\subset S_{KM}^+$. We use the following notions:
+
+\begin{definition}
+A uniform group $\Gamma$ is called:
+\begin{enumerate}
+\item Flat linear, when its flat representations separate the points, in the sense that for any $g\neq1$ there exists $\pi\in X_\Gamma$ with $\pi(g)\neq1$.
+
+\item Stationary, when there is a probability measure $\mu$ on $X_\Gamma$ such that
+$$\int_{X_\Gamma}tr(\pi(g))\,d\mu(\pi)=\delta_{g,1}$$
+for any $g\in\Gamma$, where $tr$ is the normalized trace of $M_K(\mathbb C)$.
+\end{enumerate}
+\end{definition}
+
+The terminology in (1) is inspired by the notion of inner linearity for discrete quantum groups: a flat linear group is one which embeds, in a parametric sense, into the unitary group $U_K$, via its flat representations. The flat linearity of $\Gamma$ is precisely the inner faithfulness of $\pi_\Gamma$, in the sense of \cite{bbi}, and the stationarity of $\Gamma$ is precisely the stationarity of $\pi_\Gamma$, in the sense of \cite{bfr}. This latter condition forces the kernel of $\pi_\Gamma$ to be contained in the kernel of the left regular representation, so the reduced group algebra $C^*_{red}(\Gamma)$ is a quotient of the image of $\pi_\Gamma$, which is contained in $M_K(C(X_\Gamma))$. Thus $C^*_{red}(\Gamma)$ is subhomogeneous, which by Thoma's theorem \cite{tho} requires $\Gamma$ to be virtually abelian. See \cite{bc1}. For the convenience of the reader, here is a dictionary between the group theory notions used in this paper, and the quantum group notions behind them:
+
+\vspace{4mm}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|}
+\hline
+Group side&Quantum group side\\
+\hline
+uniform group $\mathbb Z_K^{*M}\to\Gamma\to\mathbb Z_K^M$&product type group dual $\widehat{\Gamma}\subset S_{KM}^+$, with $S_M$ symmetry\\
+flat representation $\pi:\Gamma\to U_K$&quasi-flat model, $rank(P_{ij})\leq1$\\
+flat linear group&inner faithful universal quasi-flat model\\
+stationary group&stationary model, $\int tr\circ\pi=h$\\
+flat representation at height $m$&quasi-flat model at height $m$, in $M_{mK}$\\
+strongly symmetric, with $K=2$&group-theoretical easy quantum group\\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{4mm}
+
+The last line refers to the work of Raum and Weber \cite{rw2,rwe}, to be discussed in section 7, and the height $m$ notion will be discussed in section 9. At the elementary level, we have:
+
+\begin{proposition}
+If $\Gamma$ is stationary, then $\Gamma$ is flat linear.
+\end{proposition}
+
+\begin{proof}
+If $g\in\Gamma$ satisfies $\pi(g)=1$ for any $\pi\in X_\Gamma$, then the integral in the stationarity formula equals 1, and so $g=1$.
+\end{proof}
+
+Let us discuss now the free products. For $\Gamma=\mathbb Z_K^{*M}$ there are no relations, and the space of flat representations is simply $X_\Gamma=C_W^M$, where $C_W=\{UWU^*|U\in U_K\}\simeq U_K/\mathbb T^K$ is the conjugacy class of $W$. The following statement was proved in \cite{bfr}, modulo the fact that a certain noncommutative polynomial does not vanish identically on $U_K^M$, and we provide here a complete proof, along with a stronger, generic version of the result:
+
+\begin{theorem}
+The free product $\mathbb Z_K^{*M}$ is flat linear. More precisely, the set of faithful flat representations is a dense $G_\delta$ subset of $X_\Gamma=C_W^M$.
+\end{theorem}
+
+\begin{proof}
+At $M=1$ the representation $g_1\to W$ is faithful, so assume $M\geq2$. Any $\gamma\neq1$ in $\Gamma=\mathbb Z_K^{*M}$ can be written as a reduced word $\gamma=g_{i_1}^{k_1}\ldots g_{i_n}^{k_n}$, with $n\geq1$, $i_p\neq i_{p+1}$ and $1\leq k_p\leq K-1$. Consider the following holomorphic map, defined on the connected complex manifold $GL_K(\mathbb C)^M$:
+$$F_\gamma(A_1,\ldots,A_M)=\prod_{p=1}^nA_{i_p}W^{k_p}A_{i_p}^{-1}-1$$
+
+Our first claim is that $F_\gamma$ does not vanish identically on $U_K^M$. Indeed, assume that it does. Since the complexification of the Lie algebra of $U_K$ is the full matrix algebra $M_K(\mathbb C)$, a holomorphic function on $GL_K(\mathbb C)^M$ which vanishes on $U_K^M$ has all its derivatives vanishing at the points of $U_K^M$, and so vanishes identically, by the identity theorem. Thus we would have $F_\gamma=0$ on $GL_K(\mathbb C)^M$, and we will show that this is not the case.
+
+We use the fact that $\mathbb Z_K^{*M}$ has a faithful representation $\sigma:\mathbb Z_K^{*M}\to PSL_2(\mathbb R)$, mapping each generator $g_i$ to an elliptic element, of rotation angle $2\pi/K$. Indeed, when $M(K-1)>K$, the orbifold consisting of a sphere with $M$ cone points of order $K$ and one puncture is hyperbolic, its fundamental group is $\mathbb Z_K^{*M}$, and its uniformization produces such a representation, by the Poincar\'e polygon theorem. See \cite{bea,kat}. In the remaining case $K=M=2$ we can use the infinite dihedral group, generated inside $PSL_2(\mathbb R)$ by the half-turns around 2 distinct points.
+
+Now since an elliptic element of rotation angle $2\pi/K$ is conjugate in $PGL_2(\mathbb C)$ to the class of $diag(w,w^2)$, we can find matrices $B_1,\ldots,B_M\in GL_2(\mathbb C)$ such that $\sigma(g_i)$ is the class of $B_i\,diag(w,w^2)B_i^{-1}$. Consider then $A_i=B_i\oplus1_{K-2}$. Since $W=diag(w,w^2)\oplus diag(w^3,\ldots,w^K)$, the upper left $2\times2$ block of the product appearing in $F_\gamma(A_1,\ldots,A_M)$ is:
+$$\prod_{p=1}^nB_{i_p}diag(w,w^2)^{k_p}B_{i_p}^{-1}$$
+
+The class of this matrix in $PGL_2(\mathbb C)$ is $\sigma(\gamma)\neq1$, and so this matrix is not scalar. Thus $F_\gamma(A_1,\ldots,A_M)\neq0$, which proves our claim.
+
+Now back to $X_\Gamma$, consider the closed subset $Z_\gamma=\{\pi\in X_\Gamma|\pi(\gamma)=1\}$. Since $X_\Gamma=C_W^M$ is a connected real analytic manifold, and $\pi\to\pi(\gamma)-1$ is a real analytic function on it, which is not identically zero by the above, $Z_\gamma$ has empty interior. Since $\Gamma$ is countable, the Baire category theorem shows that the complement of $\bigcup_{\gamma\neq1}Z_\gamma$, which is the set of faithful flat representations, is a dense $G_\delta$.
+\end{proof}
+
+Alternatively, one can use here Dekker's faithful representations of free products of cyclic groups by rotations \cite{dek}, lifted to $U_2$, and completed with $w^2,\ldots,w^{K-1}$.
+
+\section{The finite group case}
+
+In this section we assume that $\Gamma$ is a finite uniform group. We denote by ${\rm Irr}(\Gamma)$ the set of its irreducible representations, up to equivalence, and for $\tau\in{\rm Irr}(\Gamma)$ we denote by $\chi_\tau$ its character. The point is that everything reduces to integer data, as follows:
+
+\begin{definition}
+Given a finite uniform group $\Gamma$, and $\tau\in{\rm Irr}(\Gamma)$:
+\begin{enumerate}
+\item The spectral data of $\tau$ is the matrix $e_\tau\in M_{M\times K}(\mathbb N)$ given by
+$$(e_\tau)_{ij}=\text{multiplicity of $w^j$ as eigenvalue of $\tau(g_i)$}$$
+and $\tau$ is called admissible when $e_\tau$ has entries $0,1$.
+
+\item A flat cover is a set $S\subset{\rm Irr}(\Gamma)$ of admissible irreducibles such that $\sum_{\tau\in S}e_\tau$ is the all-one matrix. We denote by $\mathcal F_\Gamma$ the set of flat covers.
+\end{enumerate}
+\end{definition}
+
+Observe that the spectral data can be computed from the character, as follows, with $\chi_\tau$ being evaluated on the powers of the generators:
+$$(e_\tau)_{ij}=\frac{1}{K}\sum_{m=0}^{K-1}\chi_\tau(g_i^m)w^{-jm}$$
+
+Geometrically, it is convenient to think of the spectral data $e_\tau$ as a subset of the $M\times K$ grid, formed by the pairs $(i,j)$ such that $w^j$ is an eigenvalue of $\tau(g_i)$. When $\tau$ is admissible, this subset has exactly $\dim(\tau)$ points on each row, so that $\dim(\tau)\leq K$, and a flat cover is a set of admissible irreducibles whose subsets partition the grid. Thus, the flat covers are the solutions of an exact covering problem, in the sense of combinatorics, and this will be the key to the computations below. With these notions in hand, we have:
+
+\begin{theorem}
+Let $\Gamma$ be a finite uniform group.
+\begin{enumerate}
+\item The flat representations of $\Gamma$ are, up to conjugation, the representations $\pi_S=\bigoplus_{\tau\in S}\tau$, with $S\in\mathcal F_\Gamma$, and we have a decomposition
+$$X_\Gamma=\bigsqcup_{S\in\mathcal F_\Gamma}O_S\quad,\quad O_S\simeq U_K/\mathbb T^{|S|}$$
+into connected components, given by the conjugation orbits $O_S$ of the representations $\pi_S$.
+
+\item $\Gamma$ is flat linear precisely when its admissible irreducibles have trivial common kernel, these being exactly the irreducibles $\tau\in\bigcup_{S\in\mathcal F_\Gamma}S$.
+
+\item $\Gamma$ is stationary precisely when there are weights $c_S\geq0$ satisfying
+$$\sum_{S\ni\tau}c_S=\frac{K\dim(\tau)}{|\Gamma|}\quad,\quad\forall\tau\in{\rm Irr}(\Gamma)$$
+and in this case $\sum_Sc_S=1$, and the stationarity measure can be taken to be $\mu=\sum_Sc_S\mu_S$, with $\mu_S$ being the Haar measure on $O_S$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) Given a flat representation $\pi$, decompose it as $\pi=\bigoplus_\tau m_\tau\tau$. The spectrum of $\pi(g_i)$, counted with multiplicities, is then the sum of the spectra of the $\tau(g_i)$, taken with multiplicities $m_\tau$. Since this spectrum consists of the $K$-th roots of unity, each with multiplicity 1, we must have $m_\tau\in\{0,1\}$, each $\tau$ with $m_\tau=1$ must be admissible, and the set $S=\{\tau|m_\tau=1\}$ must be a flat cover. Conversely, any flat cover $S$ produces a flat representation $\pi_S$, whose dimension is automatically $K$. Since $\pi_S$ is multiplicity-free, the stabilizer of $\pi_S$ under the conjugation action of $U_K$ is the unitary group of its commutant, which is $\mathbb T^{|S|}$, and this gives the orbit description. Finally, distinct flat covers produce representations with distinct characters, and so disjoint closed orbits.
+
+(2) Any admissible irreducible $\tau$ belongs to a flat cover. Indeed, in each row of the $M\times K$ grid, $\tau$ occupies $\dim(\tau)$ slots, and the remaining $K-\dim(\tau)$ slots of the $M$ rows can be matched, in an arbitrary way, into $K-\dim(\tau)$ characters, all the elements of $\mathbb Z_K^M$ being characters, because $\Gamma^{ab}=\mathbb Z_K^M$. Thus the irreducibles appearing in flat covers are exactly the admissible ones, and since $\pi_S(g)=1$ precisely when $\tau(g)=1$ for any $\tau\in S$, this gives the result.
+
+(3) Let $\mu$ be a probability measure on $X_\Gamma$, and set $c_S=\mu(O_S)$. Since the trace is invariant under conjugation, the function $\pi\to tr(\pi(g))$ is constant on each $O_S$, and we obtain:
+\begin{eqnarray*}
+\int_{X_\Gamma}tr(\pi(g))\,d\mu(\pi)
+&=&\sum_Sc_S\,tr(\pi_S(g))\\
+&=&\frac{1}{K}\sum_Sc_S\sum_{\tau\in S}\chi_\tau(g)\\
+&=&\frac{1}{K}\sum_\tau\left(\sum_{S\ni\tau}c_S\right)\chi_\tau(g)
+\end{eqnarray*}
+
+On the other hand, the regular character gives $\delta_{g,1}=\frac{1}{|\Gamma|}\sum_\tau\dim(\tau)\chi_\tau(g)$. Since the irreducible characters are linearly independent, $\mu$ produces the stationarity precisely when the equations in the statement are satisfied. Conversely, given weights $c_S\geq0$ satisfying these equations, the measure $\mu=\sum_Sc_S\mu_S$ produces the stationarity. Finally, multiplying the equations by $\dim(\tau)$ and summing gives $K\sum_Sc_S=K$, because each flat cover has total dimension $K$, and because $\sum_\tau\dim(\tau)^2=|\Gamma|$.
+\end{proof}
+
+As a first consequence, we have the following obstruction to stationarity:
+
+\begin{corollary}
+If a finite uniform group $\Gamma$ is stationary, then all its irreducible representations $\tau$ are admissible. In particular, we must have $\dim(\tau)\leq K$, and each matrix $\tau(g_i)$ must have simple spectrum.
+\end{corollary}
+
+\begin{proof}
+All the right-hand sides of the equations in Theorem 3.2 (3) are strictly positive, so each $\tau$ must belong to a flat cover, and so must be admissible.
+\end{proof}
+
+As an illustration, let us discuss the abelian case. Here the irreducibles are the characters $\chi_a$, with $a\in\mathbb Z_K^M$, given by $\chi_a(g_i)=w^{a_i}$, they are all admissible, and the flat covers are the sets $S\subset\mathbb Z_K^M$ of size $K$ whose coordinate projections $S\to\mathbb Z_K$ are all bijective. We have:
+
+\begin{theorem}
+The abelian group $\mathbb Z_K^M$ is stationary, and therefore flat linear. Moreover, it has $(K!)^{M-1}$ flat covers, and the stationarity measure can be taken to be the uniform measure on the $K^{M-1}$ translates of the diagonal $\{(t,\ldots,t)|t\in\mathbb Z_K\}$.
+\end{theorem}
+
+\begin{proof}
+A flat cover $S$ is determined by the permutations $\sigma_2,\ldots,\sigma_M\in S_K$ such that $S=\{(t,\sigma_2(t),\ldots,\sigma_M(t))|t\in\mathbb Z_K\}$, which gives the count $(K!)^{M-1}$. The translates $b+\Delta$ of the diagonal $\Delta$ are flat covers, which partition $\mathbb Z_K^M$ into $K^{M-1}$ classes. Thus, the weights $c_{b+\Delta}=K^{1-M}$ satisfy the equations in Theorem 3.2 (3), whose right-hand side is $K/K^M$.
+\end{proof}
+
+\section{Computer census, first round}
+
+Theorem 3.2 converts the flat linearity and stationarity questions, for a finite uniform group $\Gamma$, into a finite amount of exact integer computations. We have implemented this in the Python program {\tt flatlin.py}, which works as follows:
+
+\begin{enumerate}
+\item The group $\Gamma$ is given by $M$ permutations $g_1,\ldots,g_M$ of order $K$. The program computes the elements, the multiplication table, the conjugacy classes and the power maps, and checks the $S_M$ symmetry, by checking that the transposition $(12)$ and the $M$-cycle of the generators extend to automorphisms.
+
+\item The character table is computed numerically, by Burnside's algorithm \cite{bur,dix}, as common eigenvectors of the class multiplication matrices, and is checked against the orthogonality relations. Only integer quantities are extracted from it: the dimensions, the spectral data $e_\tau$, via the formula after Definition 3.1, and the kernels, all with rounding errors checked to be $<10^{-6}$.
+
+\item The flat covers are enumerated by an exact cover search, in the style of Knuth's Algorithm X \cite{knu}, and flat linearity is decided by the kernel criterion in Theorem 3.2 (2).
+
+\item Stationarity is decided by the linear program in Theorem 3.2 (3). In the feasible case, a vertex solution is computed in floating point and then recomputed exactly, in rational arithmetic, from its support. In the infeasible case, the program produces either an irreducible belonging to no flat cover, or a Farkas certificate, namely a rational vector $y$ with $\langle y,1_S\rangle\leq0$ for any flat cover $S$, and $\langle y,\lambda\rangle>0$, where $\lambda$ is the right-hand side vector, all checked in exact arithmetic.
+\end{enumerate}
+
+The program {\tt examples.py} runs this on the basic families of uniform groups from section 1, realized as permutation groups: $\mathbb Z_K^M$ acting on itself, $D_n$ acting on the $n$-gon, $H_K$ acting linearly on $\mathbb Z_K^3$, and $\Gamma_{3,q}=A_q\rtimes\mathbb Z_3^2$ acting affinely on $A_q=\mathbb Z_q^4$, with $g_1:v\to(m\otimes1)v$ and $g_2:v\to(1\otimes m)v+a$, for a suitable vector $a$. Its output is recorded in {\tt examples.log}. For the groups $\Gamma_{K,q}$ in general, including the case $q|K$, where the Schur-Zassenhaus theorem does not apply, we use instead the normal form $\gamma=c^vg_1^xg_2^y$, where $c_{ab}=[g_1^a,g_2^b]$ with $1\leq a,b\leq K-1$ is the standard free basis of the derived subgroup of $\mathbb Z_K*\mathbb Z_K$, the multiplication being computed from the conjugation action of $g_1,g_2$ on the elements $c_{ab}$. This is implemented in the program {\tt metab.py}, which recovers $\Gamma_{3,2}$, and computes $\Gamma_{3,3}$. For larger orders, the GAP program {\tt dempsey.g} builds $\Gamma_{K,q}$ from its presentation, with generators $g_1,g_2$, and relations $g_1^K=g_2^K=1$, $c_{ab}^q=1$ and $[c_{ab},c_{a'b'}]=1$, and records the same data as the census programs from section 8 below, which is then analyzed in Python. The results are summarized below:
+
+\vspace{4mm}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|r|c|c|l|r|c|c|c|}
+\hline
+$\Gamma$&$|\Gamma|$&$K$&$M$&irreducibles&$|\mathcal F_\Gamma|$&$\Lambda_\Gamma$&flat&stat.\\
+\hline
+$\mathbb Z_2^2,\mathbb Z_2^3,\mathbb Z_2^4$&4, 8, 16&2&2, 3, 4&$1^{|\Gamma|}$&2, 4, 8&yes&yes&yes\\
+$\mathbb Z_3^2,\mathbb Z_3^3$&9, 27&3&2, 3&$1^{|\Gamma|}$&6, 36&yes&yes&yes\\
+$\mathbb Z_4^2,\mathbb Z_5^2$&16, 25&4, 5&2&$1^{|\Gamma|}$&24, 120&yes&yes&yes\\
+$D_n$, $4\leq n\leq24$&$2n$&2&2&$1^4\,2^{n/2-1}$&$n/2+1$&yes&yes&yes\\
+$H_3$&27&3&2&$1^9\,3^2$&8&yes&yes&yes\\
+$H_4$&64&4&2&$1^{16}\,2^4\,4^2$&36&yes&yes&yes\\
+$H_5$&125&5&2&$1^{25}\,5^4$&124&yes&yes&yes\\
+$H_6$&216&6&2&$1^{36}\,2^9\,3^8\,6^2$&1036&yes&yes&yes\\
+$H_7$&343&7&2&$1^{49}\,7^6$&5046&yes&yes&yes\\
+$H_8$&512&8&2&$1^{64}\,2^{16}\,4^8\,8^4$&54068&yes&yes&yes\\
+$H_9$&729&9&2&$1^{81}\,3^{18}\,9^6$&376326&yes&yes&yes\\
+$\Gamma_{3,2}$&144&3&2&$1^9\,3^6\,9^1$&12&no&yes&no\\
+$\Gamma_{3,5}$&5625&3&2&$1^9\,3^{48}\,9^{64}$&54&no&yes&no\\
+$\Gamma_{3,7}$&21609&3&2&$1^9\,3^{96}\,9^{256}$&102&no&yes&no\\
+$\Gamma_{3,11}$&131769&3&2&$1^9\,3^{240}\,9^{1600}$&246&no&yes&no\\
+$\Gamma_{3,3}$&729&3&2&$1^9\,3^{26}\,9^6$&20&no&no&no\\
+$\Gamma_{4,2}$&8192&4&2&$1^{16}\,2^4\,4^{30}\,8^{24}\,16^{24}$&52&no&no&no\\
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+
+Here the notation $d^m$ in the irreducibles column means that there are $m$ irreducibles of dimension $d$, the column $\Lambda_\Gamma$ indicates whether the diagonal kernel, introduced in section 5 below, is abelian, and the dihedral groups were computed for the values $n=4,6,8,10,12,16,20,24$. For the dihedral groups we recover the stationarity result from \cite{bc2}, and the number of flat covers is $n/2+1$, corresponding to the $n/2-1$ irreducibles of dimension 2, which are flat covers by themselves, and to the 2 ways of pairing the 4 characters. Regarding $\Gamma_{3,2}$, the failure of stationarity was established in \cite{bc2} by a direct computation, and appears here as an instance of Corollary 3.3, because of the irreducible of dimension $9>3$. Also, the irreducibles of $\Gamma_{3,q}$ with $q=2,5,7,11$ are in agreement with the formula in section 6 below, and the computation of $\Gamma_{3,3}$ was done both with {\tt metab.py} and with {\tt dempsey.g}, with identical results. Summarizing, we have:
+
+\begin{theorem}
+The groups $\mathbb Z_K^M$ and $D_n$, as well as $H_K$ with $K\leq9$, are stationary, and so flat linear. The groups $\Gamma_{3,q}$ with $q=2,5,7,11$ are flat linear, but not stationary, and the groups $\Gamma_{3,3}$ and $\Gamma_{4,2}$ are neither flat linear, nor stationary.
+\end{theorem}
+
+\begin{proof}
+This follows from the above computations, all certified in exact arithmetic as explained above, along with Theorem 3.4 for the groups $\mathbb Z_K^M$ with arbitrary $K,M$, and with \cite{bc2} for the dihedral groups $D_n$ with $n$ arbitrary.
+\end{proof}
+
+\section{Diagonal kernels, stationarity}
+
+In this section we prove a general stationarity result, which explains most of the positive results in the census, and in particular covers all the Heisenberg groups. The key object is the following normal subgroup:
+
+\begin{definition}
+The diagonal kernel of a uniform group $\Gamma=\langle g_1,\ldots,g_M\rangle$ is
+$$\Lambda_\Gamma=\ker\left(\Gamma\to\mathbb Z_K\right)$$
+where the morphism $\Gamma\to\mathbb Z_K$ is the composition of the quotient map $\Gamma\to\mathbb Z_K^M$ with the sum map $\mathbb Z_K^M\to\mathbb Z_K$, so that $g_i\to1$ for any $i$.
+\end{definition}
+
+Observe that $\Lambda_\Gamma$ is a normal subgroup of index $K$, which contains the derived subgroup $\Gamma'$, and which is invariant under the action of $S_M$. Moreover, we have $g_i\in g_1\Lambda_\Gamma$ for any $i$, and the cosets of $\Lambda_\Gamma$ are represented by the powers $1,g_1,\ldots,g_1^{K-1}$. Our main result here is:
+
+\begin{theorem}
+Let $\Gamma$ be a uniform group, finite or not, whose diagonal kernel $\Lambda=\Lambda_\Gamma$ is abelian. Then for any character $\chi\in\widehat{\Lambda}$ the induced representation
+$$\pi_\chi={\rm Ind}_\Lambda^\Gamma(\chi):\Gamma\to U_K$$
+is flat, and the push-forward of the Haar measure of the compact abelian group $\widehat{\Lambda}$ via the map $\chi\to\pi_\chi$ is a stationarity measure. In particular, $\Gamma$ is stationary, and so flat linear.
+\end{theorem}
+
+\begin{proof}
+We use the coset representatives $x_j=g_1^j$, with $j\in\mathbb Z_K$, and the corresponding basis $\{e_j\}$ of the space of $\pi_\chi$, so that $\pi_\chi(g)e_j=\chi(x_{j'}^{-1}gx_j)e_{j'}$, where $j'$ is such that $gx_j\in x_{j'}\Lambda$. For $g=g_i$ we have $j'=j+1$, because the image of $g_ig_1^j$ in $\mathbb Z_K$ is $j+1$. Thus $\pi_\chi(g_i)=PD_i$, where $P$ is the cyclic shift $e_j\to e_{j+1}$, and $D_i$ is diagonal, with entries $d_{ij}=\chi(x_{j+1}^{-1}g_ix_j)$. Now observe that we have:
+$$(PD_i)^K=\left(\prod_jd_{ij}\right)1$$
+
+Since $g_i^K=1$, we conclude that $\prod_jd_{ij}=1$. But this allows us to find a diagonal unitary $E$ with $E_{j+1}/E_j=d_{ij}$ for any $j$, the compatibility condition around the cycle being precisely $\prod_jd_{ij}=1$, and we have then $PD_i=EPE^{-1}$. Thus $\pi_\chi(g_i)$ is conjugate to $P$, whose eigenvalues are the $K$-th roots of unity, each with multiplicity 1, and so $\pi_\chi$ is flat.
+
+Regarding now the stationarity, since $\Lambda$ is normal, the character formula of Frobenius gives, for any $g\in\Gamma$:
+$$Tr(\pi_\chi(g))=\delta_{g\in\Lambda}\sum_{j\in\mathbb Z_K}\chi(x_j^{-1}gx_j)$$
+
+By integrating over $\chi\in\widehat{\Lambda}$, and using $\int_{\widehat{\Lambda}}\chi(h)d\chi=\delta_{h,1}$ for $h\in\Lambda$, we obtain $K\delta_{g,1}$. Thus, after normalizing the trace, the push-forward measure is a stationarity measure, as claimed. Finally, the map $\chi\to\pi_\chi$ is continuous, so the push-forward is well-defined.
+\end{proof}
+
+In the case $M=2$, the abelianity condition can be made explicit, as follows:
+
+\begin{proposition}
+For a uniform group $\Gamma=\langle g_1,g_2\rangle$, we have $\Lambda_\Gamma=\Gamma'\langle h\rangle$, with $h=g_1g_2^{-1}$, and so $\Lambda_\Gamma$ is abelian precisely when $\Gamma'$ is abelian, and is centralized by $h$.
+\end{proposition}
+
+\begin{proof}
+The subgroup $\Gamma'\langle h\rangle$ is contained in $\Lambda_\Gamma$, it is normal, because it contains $\Gamma'$, and its image in $\mathbb Z_K^2$ is the subgroup generated by $(1,-1)$, which is the kernel of the sum map. Thus $\Gamma'\langle h\rangle=\Lambda_\Gamma$, and the second assertion follows.
+\end{proof}
+
+We have as well the following general principle, which allows to combine examples:
+
+\begin{proposition}
+Assume that $\Gamma_1=\langle x_1,\ldots,x_M\rangle$ and $\Gamma_2=\langle y_1,\ldots,y_M\rangle$ are uniform, with parameters $(K_1,M)$ and $(K_2,M)$, where $K_1,K_2$ are coprime. Then $\Gamma=\Gamma_1\times\Gamma_2$, with generators $g_i=(x_i,y_i)$, is uniform, with parameters $(K_1K_2,M)$. Moreover, if $\Gamma_1$ and $\Gamma_2$ are stationary, so is $\Gamma$.
+\end{proposition}
+
+\begin{proof}
+The uniformity of $\Gamma$ follows from the Chinese remainder theorem, $\mathbb Z_{K_1}\times\mathbb Z_{K_2}=\mathbb Z_{K_1K_2}$, with the $S_M$ action being the diagonal one. Given flat representations $\pi_1,\pi_2$ of $\Gamma_1,\Gamma_2$, the tensor product $\pi_1\otimes\pi_2$ is a representation of $\Gamma$ on $\mathbb C^{K_1}\otimes\mathbb C^{K_2}$, and the eigenvalues of $\pi_1(x_i)\otimes\pi_2(y_i)$ are the products $\alpha\beta$, with $\alpha^{K_1}=1$ and $\beta^{K_2}=1$, which are the $K_1K_2$-th roots of unity, each appearing once, again by coprimality. Thus $\pi_1\otimes\pi_2$ is flat. Now if $\mu_1,\mu_2$ are stationarity measures, the push-forward of $\mu_1\times\mu_2$ under $(\pi_1,\pi_2)\to\pi_1\otimes\pi_2$ is a stationarity measure for $\Gamma$, because $tr(A\otimes B)=tr(A)tr(B)$, and $\delta_{(x,y),1}=\delta_{x,1}\delta_{y,1}$.
+\end{proof}
+
+For the Heisenberg groups with $K$ prime, the whole space of flat representations can be described explicitly, as follows:
+
+\begin{proposition}
+For $K$ prime, the Heisenberg group $H_K$ has $K!+K-1$ flat covers: the $K!$ sets $L_\sigma=\{\chi_{a,\sigma(a)}|a\in\mathbb Z_K\}$ with $\sigma\in S_K$, where $\chi_{a,b}$ is the character $g_1\to w^a$, $g_2\to w^b$, and the $K-1$ singletons formed by the irreducibles $\tau_l$ of dimension $K$, with $\tau_l(z)=w^{-l}$. Moreover, a stationarity measure is given by the weights $c_{L_\sigma}=\frac{1}{K\cdot K!}$ and $c_{\{\tau_l\}}=\frac{1}{K}$.
+\end{proposition}
+
+\begin{proof}
+For $K$ prime, the irreducibles of $H_K$ are the $K^2$ characters $\chi_{a,b}$, factorizing through $\mathbb Z_K^2$, and the $K-1$ representations $\tau_l$ of dimension $K$, with $l=1,\ldots,K-1$, given by $\tau_l(g_1)=P$ and $\tau_l(g_2)=D^l$, where $P$ is the cyclic shift and $D=diag(w^j)$. Both $P$ and $D^l$ have all the $K$-th roots of unity as eigenvalues, so each $\tau_l$ is a flat cover by itself. On the other hand, a flat cover containing a character must consist of $K$ characters, and the condition on the spectra of $g_1,g_2$ says precisely that the corresponding set of pairs $(a,b)$ is the graph of a permutation. Regarding the weights, the right-hand sides in Theorem 3.2 (3) are $1/K^2$ for the characters, and $1/K$ for the representations $\tau_l$. Since each $\chi_{a,b}$ belongs to exactly $(K-1)!$ of the sets $L_\sigma$, the weights in the statement give $(K-1)!/(K\cdot K!)=1/K^2$, as desired.
+\end{proof}
+
+Observe that, for $K>2$, the measure produced by Theorem 5.2 for $H_K$ is different, being supported by the flat covers $L_\sigma$ with $\sigma$ a translation of $\mathbb Z_K$, along with the singletons $\{\tau_l\}$. In general, there are many stationarity measures, the corresponding weights $c_S$ in Theorem 3.2 (3) forming a convex polytope. For instance, for the abelian group $\mathbb Z_K^2$ the flat covers are the graphs of the permutations of $\mathbb Z_K$, and the weights $c_S$ correspond to the decompositions of the matrix $J/K$, which is the barycenter of the Birkhoff polytope, as convex combinations of permutation matrices. Summarizing, we have obtained:
+
+\begin{theorem}
+The following uniform groups are stationary, and so flat linear:
+\begin{enumerate}
+\item The abelian groups $\mathbb Z_K^M$.
+
+\item The dihedral groups $D_n$, with $n\in2\mathbb N\cup\{\infty\}$.
+
+\item The uniform groups with $M=2$ which are nilpotent of class $\leq2$.
+
+\item In particular, the Heisenberg groups $H_K$, for any $K\geq2$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+All these assertions follow from Theorem 5.2. Indeed, for $\mathbb Z_K^M$ the diagonal kernel is abelian, for $D_n$ it is the subgroup of rotations, and in the class $\leq2$ case with $M=2$ the derived subgroup $\Gamma'$ is central, so Proposition 5.3 applies. Finally, $H_K$ has class $\leq2$, its commutator $z$ being central.
+\end{proof}
+
+\section{Metabelian groups, obstructions}
+
+We discuss now the metabelian groups $\Gamma_{K,q}=(\mathbb Z_K*\mathbb Z_K)_{met}/qA$, with $q$ prime, $q\nmid K$, which extend the order 144 example $\Gamma_{3,2}$ from \cite{bc2}. We use the description $\Gamma_{K,q}=A_q\rtimes\mathbb Z_K^2$, with $A_q=\mathbb Z_q^{(K-1)^2}$, and with $g_1,g_2$ acting by $m\otimes1$ and $1\otimes m$.
+
+\begin{lemma}
+Let $K$ be prime, and $q\neq K$ prime. The dual group $\widehat{A}_q$, with the dual action of $\mathbb Z_K^2$, has the following properties:
+\begin{enumerate}
+\item The elements $g_1^ag_2^b$ with exactly one of $a,b$ nonzero have no nontrivial fixed points.
+
+\item The elements $g_1^ag_2^b$ with $a,b$ both nonzero have a fixed point subgroup of order $q^{K-1}$.
+\end{enumerate}
+In particular, for $K\geq3$ there exist characters of $A_q$ having trivial stabilizer in $\mathbb Z_K^2$.
+\end{lemma}
+
+\begin{proof}
+Since $q\neq K$, the polynomial $1+t+\ldots+t^{K-1}$ is separable over $\mathbb F_q$, so over the algebraic closure, $m$ is diagonalizable, with eigenvalues the primitive $K$-th roots of unity $\zeta,\zeta^2,\ldots,\zeta^{K-1}$. Thus $m^a\otimes m^b$ is diagonalizable, with eigenvalues $\zeta^{ai+bj}$, with $1\leq i,j\leq K-1$. The fixed space is spanned by the eigenvectors with $ai+bj\equiv0$, and the number of such pairs $(i,j)$ is $0$ when exactly one of $a,b$ is zero, and $K-1$ when both are nonzero. Since the dimension of a fixed space does not change under field extensions, and since the dual action is by the inverse transposes, which have the same fixed space dimensions, this gives (1) and (2).
+
+Finally, a character with nontrivial stabilizer is fixed by one of the $K-1$ subgroups $\langle g_1g_2^c\rangle$ with $c\neq0$, so the number of such characters is at most $(K-1)q^{K-1}$, which for $K\geq3$ is smaller than $|\widehat{A}_q|=q^{(K-1)^2}$.
+\end{proof}
+
+With this, we can now prove our main negative result:
+
+\begin{theorem}
+For $K\geq3$ prime and $q\neq K$ prime, the group $\Gamma_{K,q}$ is flat linear, but not stationary. More precisely, $\Gamma_{K,q}$ has irreducibles of dimension $K^2$.
+\end{theorem}
+
+\begin{proof}
+Since $\Gamma_{K,q}=A_q\rtimes H$ with $A_q$ and $H=\mathbb Z_K^2$ abelian, its irreducibles are obtained by the method of little groups \cite{ser}: for each orbit of $H$ on $\widehat{A}_q$, with a chosen point $\chi$ having stabilizer $H_\chi$, and each character $\nu$ of $H_\chi$, we obtain an irreducible representation induced from $\chi\nu$, of dimension $[H:H_\chi]$. By Lemma 6.1, there are characters with $H_\chi=\{1\}$, producing irreducibles of dimension $K^2>K$. Thus $\Gamma_{K,q}$ is not stationary, by Corollary 3.3.
+
+Regarding flat linearity, this is \cite[Theorem 5.6]{bc2}, which states that for $K$ prime, a metabelian uniform group with $M=2$ whose derived subgroup has trivial $K$-primary component is flat linear. Here the derived subgroup is $A_q$, which is a $q$-group, so this result applies.
+\end{proof}
+
+Observe that this is in agreement with Proposition 5.3, because $h=g_1g_2^{-1}$ acts on $A_q$ by $m\otimes m^{-1}$, which is nontrivial for $K\geq3$, so the diagonal kernel of $\Gamma_{K,q}$ is not abelian. Also, for $K=2$ the situation is different, because $(K-1)^2=K-1=1$, and the element $g_1g_2$ acts trivially on $A_q=\mathbb Z_q$, so all the orbits have size $\leq2$. In fact, we have here $\Gamma_{2,q}=D_{2q}$, which is stationary. For $K=3$ the irreducible dimensions can be computed explicitly, from Lemma 6.1, and we obtain the following formula, which is in agreement with the computations in section 4, at $q=2,5,7,11$:
+$${\rm Irr}(\Gamma_{3,q})\ :\ 1^9\ 3^{2(q^2-1)}\ 9^{(q^2-1)^2/9}$$
+
+Indeed, the trivial character of $A_q$ produces 9 characters, the $2(q^2-1)$ nontrivial characters fixed by $g_1g_2$ or $g_1g_2^2$ form $2(q^2-1)/3$ orbits of size 3, each producing 3 irreducibles of dimension 3, and the remaining $q^4-2q^2+1=(q^2-1)^2$ characters form orbits of size 9.
+
+In the case $q|K$, the result from \cite{bc2} used above does not apply, because the derived subgroup $A/qA$ is then a $q$-group with $q|K$, and the computations in section 4 show that flat linearity can indeed fail. For $\Gamma_{3,3}$, of order 729, there are 20 flat covers, and the 23 admissible irreducibles, out of 41, have a common kernel of order 3. For $\Gamma_{4,2}$, of order 8192, the 52 flat covers produce a common kernel of order 8. Observe that for $K$ prime the infinite group $(\mathbb Z_K*\mathbb Z_K)_{met}$ is flat linear, by \cite[Theorem 5.6]{bc2}, its derived subgroup $\mathbb Z^{(K-1)^2}$ being torsion-free. Thus $\Gamma_{3,3}$ is a quotient of a flat linear group which is not flat linear, as is the case for the quotients $\Gamma_N^{[s]}$ of $\mathbb Z_2^{*N}$ in section 7 below. Summarizing, we have:
+
+\begin{theorem}
+For the metabelian groups $\Gamma_{K,q}=(\mathbb Z_K*\mathbb Z_K)_{met}/qA$ with $K\geq3$, we have:
+\begin{enumerate}
+\item For $K$ prime and $q\neq K$ prime, $\Gamma_{K,q}$ is flat linear, but not stationary.
+
+\item For $(K,q)=(3,3)$ and $(K,q)=(4,2)$, $\Gamma_{K,q}$ is neither flat linear, nor stationary.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) is Theorem 6.2, and (2) follows from the computations in section 4, the failure of stationarity being clear from the irreducibles of dimension $9>3$, respectively $8,16>4$, via Corollary 3.3.
+\end{proof}
+
+\section{Reflection groups, geometry}
+
+In this section we discuss in more detail the case $K=2$, where the generators are involutions, $\Gamma$ is a reflection group, and the flat representations have a simple geometric interpretation, in terms of configurations of points on the sphere. The reflection groups are central objects in the work of Raum and Weber on the easy quantum groups \cite{rw2,rwe}. They showed in \cite{rw2} that the group-theoretical easy quantum groups $H_N\subset G\subset H_N^{[\infty]}$ are precisely the semi-direct products $G=\widehat{\Gamma}\rtimes S_N$ coming from the strongly symmetric reflection groups $\Gamma$, and this was a key ingredient of their classification of the orthogonal easy quantum groups \cite{rwe}. The flat representations below concern the diagonal group duals $\widehat{\Gamma}$ of these quantum groups, and the results might be of interest in connection with this work.
+
+Let $\sigma_1,\sigma_2,\sigma_3$ be the Pauli matrices, namely:
+$$\sigma_1=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}\quad,\quad\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix}\quad,\quad\sigma_3=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}$$
+
+For $p\in S^2$ we set $\sigma_p=p_1\sigma_1+p_2\sigma_2+p_3\sigma_3$, which is a self-adjoint unitary with eigenvalues $\pm1$. Also, following \cite{rw2}, let us call a reflection group $\mathbb Z_2^{*N}\to\Gamma$ strongly symmetric when its kernel is invariant under any identification of letters, that is, under the endomorphisms of $\mathbb Z_2^{*N}$ given by $g_i\to g_{\varphi(i)}$, with $\varphi:\{1,\ldots,N\}\to\{1,\ldots,N\}$ arbitrary. We have:
+
+\begin{proposition}
+Let $\Gamma=\mathbb Z_2^{*N}/R$ be a uniform reflection group, with $K=2$, $M=N$.
+\begin{enumerate}
+\item The flat representations of $\Gamma$ are, up to conjugation, given by $g_i\to\sigma_{p_i}$, with $(p_1,\ldots,p_N)\in(S^2)^N$ being such that the relations in $R$ are satisfied.
+
+\item The matrix $\sigma_p\sigma_q$ has eigenvalues $e^{\pm i\theta}$, where $\theta\in[0,\pi]$ is the angle between $p,q$, so that $(\sigma_p\sigma_q)^s=1$ precisely when $\theta\in\frac{2\pi}{s}\mathbb Z$.
+
+\item If $\Gamma$ is strongly symmetric, the set $X_\Gamma\subset(S^2)^N$ of point configurations as in ($1$) is stable under all the maps $(p_i)\to(p_{\varphi(i)})$, with $\varphi$ arbitrary.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(1) A flat representation maps each $g_i$ to a self-adjoint unitary $V_i\in U_2$ with eigenvalues $\pm1$, which is of the form $V_i=\sigma_{p_i}$, with $p_i\in S^2$ being the Bloch vector of its $+1$ eigenspace. (2) This follows from $\sigma_p\sigma_q=\langle p,q\rangle1+i\sigma_{p\times q}$, which has trace $2\cos\theta$ and determinant 1. (3) If $w\in\ker(\mathbb Z_2^{*N}\to\Gamma)$, then $\varphi(w)$ is in the kernel too, so the representation $g_i\to\sigma_{p_{\varphi(i)}}$ kills $w$.
+\end{proof}
+
+Thus, the identifications of letters correspond to collisions of points on the sphere. As a basic family of examples, consider the following groups, with $s\in2\mathbb N\cup\{\infty\}$:
+$$\Gamma_N^{[s]}=\mathbb Z_2^{*N}\Big/\left\langle(g_ig_j)^s=1\right\rangle$$
+
+These groups are uniform and strongly symmetric, and are those behind the hyperoctahedral series of easy quantum groups, whose operator algebraic properties were studied in \cite{rw2}. We have $\Gamma_N^{[2]}=\mathbb Z_2^N$, $\Gamma_N^{[\infty]}=\mathbb Z_2^{*N}$, and $\Gamma_2^{[s]}=D_s$. By Proposition 7.1, their flat representations correspond to the configurations of $N$ points on the sphere whose pairwise angles are multiples of $2\pi/s$. We have the following result, which is computer-assisted, via the program {\tt bloch.py}:
+
+\begin{proposition}
+For $N=3$ and $s=4,6$, every flat representation of $\Gamma_3^{[s]}$ has finite image, of order at most $16$, respectively $48$. For $s=8,10,12$ there are flat representations of $\Gamma_3^{[s]}$ with infinite image.
+\end{proposition}
+
+\begin{proof}
+At $s=4$ this follows from the proof of Theorem 7.3 below, the image being contained in the Pauli group, of order 16. At $s=6$, distinct lines $\mathbb Rp_i$ satisfy $|\langle p_i,p_j\rangle|=1/2$. For 3 distinct lines, after orienting 2 of the inner products positively, comparing Gram matrices shows that, up to a rotation, the lines are those through the normalized roots $e_1-e_j$ with $j=2,3,4$, inside the sum-zero hyperplane $V\subset\mathbb R^4$, if the product of the 3 inner products is positive, and those through $e_1-e_2,e_1-e_3,e_2-e_3$ otherwise, and the configurations having at most 2 distinct lines fit into these models too. Now the conjugation by $\sigma_p$ acts on the Bloch sphere by the half-turn $-r_p$, where $r_p$ is the reflection perpendicular to $p$, and for these roots $r_p$ is a transposition of coordinates. Thus the image of our group in $PU(2)=SO(3)$ is contained in $\{sgn(t)t|t\in S_4\}$, acting on $V$, which has 24 elements. Moreover, a word whose image is scalar must satisfy $sgn(t)t=1$, and so $t=1$, because the action of $S_4$ on $V$ does not contain $-1$, so this word has even length, determinant 1, and is $\pm1$. Thus the image has at most $2\cdot24=48$ elements.
+
+At $s=8,10,12$, consider 3 unit vectors with common pairwise angle $\theta$, equal respectively to $\pi/4$, $2\pi/5$, $\pi/6$, which is a multiple of $2\pi/s$, and with inner products $c=\cos\theta$. These vectors exist, because their Gram matrix $G$ has eigenvalues $1-c,1-c,1+2c>0$, and define a flat representation, by Proposition 7.1. With $B=\sigma_{p_1}\sigma_{p_2}\sigma_{p_3}$, the Pauli multiplication rule gives $Tr(B)=2i\det(p_1,p_2,p_3)$, and so:
+$$T=|Tr(B)|^2=4\det G=4(1-3c^2+2c^3)$$
+
+If $B$ had finite order, its eigenvalues would be roots of unity, with product $\det B=-1$, so we would have $T=2+u+u^{-1}$ for a root of unity $u$, and all the algebraic conjugates of $T$ would belong to $[0,4]$. But we have $T=-2+2\sqrt{2}$, respectively $T=(-5+5\sqrt{5})/2$, respectively $T=-5+3\sqrt{3}$, whose algebraic conjugates $-2-2\sqrt{2}$, $(-5-5\sqrt{5})/2$, $-5-3\sqrt{3}$ are negative. Thus $B$ has infinite order. All this is confirmed numerically by the program {\tt bloch.py}, for all the realizable angle patterns.
+\end{proof}
+
+At $s=4$ the situation can be fully elucidated, as follows:
+
+\begin{theorem}
+The quotient of $\Gamma_N^{[4]}$ by the common kernel of its flat representations is the free nilpotent reflection group of class $2$, namely
+$$\Phi_N=\mathbb Z_2^{*N}\big/\gamma_3(\mathbb Z_2^{*N})$$
+where $\gamma_3$ denotes the third term of the lower central series, which has order $2^{N(N+1)/2}$. In particular, $\Gamma_N^{[4]}$ is not flat linear for $N\geq3$.
+\end{theorem}
+
+\begin{proof}
+In a flat representation of $\Gamma_N^{[4]}$, the points $p_i$ are pairwise equal, opposite or orthogonal, by Proposition 7.1. Thus they belong to $\{\pm e_1,\pm e_2,\pm e_3\}$ for some orthonormal frame, and up to conjugation the representation takes values in the Pauli group, which has order 16:
+$$P=\{\pm1,\pm i\}\cdot\{1,\sigma_1,\sigma_2,\sigma_3\}$$
+
+Since $P$ is nilpotent of class 2, any flat representation factorizes through $\Phi_N$. On the other hand, $\Phi_N$ is itself a quotient of $\Gamma_N^{[4]}$, because in $\Phi_N$ we have, for any 2 generators $a,b$, the following formulae:
+$$(ab)^2=[a,b]\quad,\quad[a,b]^2=1\quad,\quad[a,b]\in Z(\Phi_N)$$
+
+Now recall that any element of $\Phi_N$ can be written as follows, with $\varepsilon_i,c_{ij}\in\{0,1\}$:
+$$x=g_1^{\varepsilon_1}\ldots g_N^{\varepsilon_N}\prod_{i<j}[g_i,g_j]^{c_{ij}}$$
+
+Thus $|\Phi_N|\leq2^{N+N(N-1)/2}=2^{N(N+1)/2}$, and we will show that the Pauli representations separate these elements, which proves both that we have equality, and the first assertion. There are 2 cases, as follows.
+
+\underline{Case 1}: $\varepsilon\neq0$. We use a representation $g_i\to s_i\sigma_3$, with signs $s_i=\pm1$, under which:
+$$x\to\Big(\prod_is_i^{\varepsilon_i}\Big)\sigma_3^{|\varepsilon|}$$
+
+Thus, a suitable choice of the signs $s_i$ makes the image of $x$ different from 1.
+
+\underline{Case 2}: $\varepsilon=0$, $(c_{ij})\neq0$. Consider the graph $E$ on $\{1,\ldots,N\}$ having an edge $ij$ when $c_{ij}=1$, and a representation $g_i\to\sigma_{f(i)}$, with $f:\{1,\ldots,N\}\to\{1,2,3\}$. Since $[\sigma_a,\sigma_b]=-1$ for $a\neq b$, we obtain in this way:
+$$x\to(-1)^{n_f}\quad,\quad n_f=\#\Big\{ij\in E\Big|f(i)\neq f(j)\Big\}$$
+
+If $E$ has a vertex $v$ of odd degree, we take $f(v)=1$ and $f=3$ elsewhere, and we get $n_f=\deg(v)$, which is odd. Otherwise, we pick an edge $ij\in E$, and take $f(i)=1$, $f(j)=2$, and $f=3$ elsewhere, and we get $n_f=\deg(i)+\deg(j)-1$, which is odd.
+
+Finally, for $N\geq3$ the group $\Gamma_N^{[4]}$ maps onto the Coxeter group of the hyperbolic triangle $(4,4,4)$, which is infinite, so it is not isomorphic to the finite group $\Phi_N$.
+\end{proof}
+
+The orders $8,64,1024$ of $\Phi_2,\Phi_3,\Phi_4$ were also checked directly with the program {\tt flatpart.py}, which computes the image of the direct sum of all the Pauli representations. We can now formulate our main result regarding the groups $\Gamma_N^{[s]}$, which covers as well the case $s\geq8$, where some flat representations have infinite image:
+
+\begin{theorem}
+The reflection groups $\Gamma_N^{[s]}$ behave as follows:
+\begin{enumerate}
+\item The group $\Gamma_N^{[2]}=\mathbb Z_2^N$ is stationary.
+
+\item The group $\Gamma_N^{[\infty]}=\mathbb Z_2^{*N}$ is flat linear, and for $N\geq3$ it is not stationary.
+
+\item For $s\geq4$ finite and even, and $N\geq3$, the group $\Gamma_N^{[s]}$ is not flat linear, the nontrivial element $w=[(g_1g_2)^{s/2},g_3]$ being trivial in all its flat representations.
+
+\item For $s=4,6$ and $N\geq3$, the flat representations of $\Gamma_N^{[s]}$ all factor through a finite quotient, while $\Gamma_N^{[s]}$ is infinite.
+
+\item For $N=2$ and any even $s$, the group $\Gamma_2^{[s]}=D_s$ is stationary.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) and (5) follow from Theorem 5.6, and (2) follows from Theorem 2.4, along with the fact that $\mathbb Z_2^{*N}$ is not amenable for $N\geq3$.
+
+(3) In a flat representation $g_i\to\sigma_{p_i}$, the matrix $U=\sigma_{p_1}\sigma_{p_2}$ has determinant 1, and satisfies $U^s=1$, so its eigenvalues are $e^{\pm i\theta}$ with $s\theta\in2\pi\mathbb Z$, and so $U^{s/2}=\pm1$. Thus $(g_1g_2)^{s/2}$ is mapped to a scalar, and $w$ is mapped to 1. On the other hand, consider a hyperbolic triangle with angles $\pi/s$, map $g_1,g_2,g_3$ to the reflections in its sides, and map the other generators $g_i$ to the image of $g_1$, which gives a morphism, because $s$ is even. The image of $(g_1g_2)^{s/2}$ is then the half-turn around the vertex $v$ where the first 2 sides meet, and since this half-turn is an involution, the image of $w$ is the product of the half-turns around $v$ and around its reflection $v'\neq v$ by the third side, which is a nontrivial translation. Thus $w\neq1$, as claimed.
+
+(4) For $s=4$ this follows from Theorem 7.3. For $s=6$, consider a flat representation $g_i\to\sigma_{p_i}$. The lines $\mathbb Rp_i$, when distinct, are pairwise at angle $\pi/3$, and there are at most 3 distinct such lines in $\mathbb R^3$, because the Gram matrix of 4 such lines would be of the form $1+S/2$, with $S$ being a $4\times4$ symmetric matrix with zero diagonal and off-diagonal entries $\pm1$, whose smallest eigenvalue is always $-3$, $-\sqrt{5}$ or $-1$, and never $-2$, so this Gram matrix cannot be positive of rank $\leq3$. Thus the image of the representation is contained in the group generated by $-1$ and by 3 matrices $\sigma_{p_i}$, which is finite by Proposition 7.2. Since there are finitely many such configurations up to rotation, the kernels of the flat representations have a finite index intersection. Finally, $\Gamma_N^{[s]}$ is infinite by (3), or by mapping it onto the Coxeter group of the hyperbolic triangle $(s,s,s)$.
+\end{proof}
+
+For $s\geq8$ the flat representations can have infinite image, by Proposition 7.2, and it would be interesting to compute the flat quotients of the groups $\Gamma_N^{[s]}$, namely their quotients by the common kernel of the flat representations, which are proper quotients by Theorem 7.4 (3), and to know for which values of $s$ these quotients are finite, as is the case for $s=4,6$, by Theorem 7.4 (4). More generally, it would be interesting to understand the flat representations of the strongly symmetric reflection groups. By the Raum-Weber correspondence \cite{rw2}, this would provide information on the quasi-flat models of all the group-theoretical easy quantum groups, at the level of their diagonal group duals. Observe that the strongly symmetric reflection groups form an uncountable class, as shown in \cite{rw2}.
+
+\section{The SmallGroups census}
+
+For a finite uniform group $\Gamma$ we have the following implications, coming from Theorem 5.2 and Corollary 3.3, where ``admissible'' means that all the irreducible representations of $\Gamma$ are admissible, in the sense of Definition 3.1:
+$$\Lambda_\Gamma\ \text{abelian}\implies\Gamma\ \text{stationary}\implies\Gamma\ \text{admissible}$$
+
+The natural questions are whether these implications can be reversed, and whether all the finite uniform groups are flat linear. In order to investigate these questions, we have used the SmallGroups library \cite{bes} of the GAP system, version 4.16.1, as follows:
+
+\begin{enumerate}
+\item The GAP programs produced from our template {\tt template.g}, namely {\tt manul.g}, {\tt leopard.g}, {\tt ali.g}, {\tt cheetah.g}, {\tt frazier.g}, {\tt liston.g} and {\tt canelo.g}, run, for given parameters $K,M$, over all the groups $G$ of order $n$ in a given range, with $K^M|n$, except for the orders having more than $2500$ groups, such as $n=256,576,1152,1728$, and keep the groups with $G^{ab}=\mathbb Z_K^M$.
+
+\smallskip
+
+\item For each of these groups, the programs compute the epimorphisms $\mathbb Z_K^{*M}\to G$ up to automorphisms, via the GQuotients algorithm \cite{heo}, and for each such epimorphism they record whether the $S_M$ symmetry holds, whether $\Lambda_\Gamma$ is abelian, and the character degrees, spectral data, kernels and class sizes, all computed exactly, with cyclotomic arithmetic.
+
+\smallskip
+
+\item The cases $K=8,9$ were done by {\tt liston.g}, and the case $K=4$ with $1000<n\leq2000$ by {\tt canelo.g}, the 2 programs running in parallel, on 2 different computers.
+
+\smallskip
+
+\item The Python program {\tt census.py} reads this data, and computes the flat covers, the flat linearity and the stationarity, exactly as in section 4. For the data from {\tt liston.g} and {\tt canelo.g}, we have used its variant {\tt census\_sym.py}, which only analyzes the symmetric epimorphisms. Also, the program {\tt explore.py} searches for uniform groups among random permutation groups, and was used in order to find the first examples below.
+\end{enumerate}
+
+Among these programs, {\tt frazier.g} was particularly useful, punching like a heavyweight champion, with a few decisive left hooks: in a short run, it covered the small orders at $K=6$ and the case $M=4$, producing the group $2^{1+4}_-$ and the group of order 648 discussed below, which disproves the natural conjecture that stationarity is decided by dimension counting.
+
+\medskip
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$K$&$M$&epimorphisms&uniform&$\Lambda_\Gamma$ abelian&admissible&stationary&flat linear\\
+\hline
+2&3&3939&20&8&9&9&14\\
+2&4&4187&4&2&2&2&2\\
+3&2&558&260&131&150&148&239\\
+3&3&7224&13&6&6&6&7\\
+4&2&1458&348&291&311&308&317\\
+5&2&128&42&29&42&32&42\\
+6&2&813&170&120&150&141&160\\
+7&2&50&10&10&10&10&10\\
+8&2&84&24&24&24&24&24\\
+9&2&97&27&22&27&25&27\\
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+
+The ranges of orders covered are as follows: $n\leq2000$ for $K=3,4,5,7,8,9$ with $M=2$, $n\leq1368$ for $K=6$ with $M=2$, $n\leq248$ for $K=2$ with $M=3$, $n\leq729$ for $K=3$ with $M=3$, and $n\leq128$ for $K=2$ with $M=4$, the last order being only partially covered for $K=3$ with $M=3$, for $K=2$ with $M=4$, and for $K=6$ with $M=2$. In total, these programs find 18538 epimorphisms, 918 of which are symmetric, and so correspond to uniform groups, and their properties are summarized in the above table, where the columns after the third one count uniform groups only. Observe that at $M=3,4$ the symmetric epimorphisms are quite rare, the $S_M$ symmetry being a strong condition. Also, at $K=9$ there are 4 admissible uniform structures having more than $400000$ flat covers, whose stationarity was decided by hand, as explained at the end of this section. As the table shows, the answer to all the above questions is negative. In order to explain this, let us start with the following simple sufficient condition for stationarity:
+
+\begin{proposition}
+Assume that all the irreducible representations of a finite uniform group $\Gamma$ have dimension $1$ or $K$, and that those of dimension $K$ are admissible. Then $\Gamma$ is stationary.
+\end{proposition}
+
+\begin{proof}
+The characters of $\Gamma$ factorize through $\Gamma^{ab}=\mathbb Z_K^M$, so they are the characters $\chi_a$ with $a\in\mathbb Z_K^M$, and as in the proof of Theorem 3.4, the $K^{M-1}$ translates of the diagonal are flat covers by characters, partitioning the set of characters. On the other hand, each admissible irreducible $\tau$ of dimension $K$ forms a flat cover by itself. With weights $K/|\Gamma|$ on the translates of the diagonal, and $K^2/|\Gamma|$ on the singletons $\{\tau\}$, the equations in Theorem 3.2 (3) are satisfied.
+\end{proof}
+
+The census contains 62 uniform groups which are stationary without having an abelian diagonal kernel. Those with $K$ prime, namely $K=2,3,5$, have character degrees $1$ and $K$ only, so they are explained by this result, while for $K$ composite other examples appear, such as the group $(\mathbb Z_3\times\mathbb Z_3)\rtimes((\mathbb Z_4\times\mathbb Z_2)\rtimes\mathbb Z_4)={\rm SmallGroup}(288,429)$ at $K=4$, with irreducibles $1^{16}\,2^4\,4^{16}$. The simplest example is $\Gamma=A_4\times\mathbb Z_3={\rm SmallGroup}(36,11)$, with $K=3$, which has irreducibles $1^9\,3^3$, and 2 uniform structures, both stationary. Here $\Lambda_\Gamma=V_4\langle h\rangle$, with $h=g_1g_2^{-1}$, by Proposition 5.3, and the diagonal kernel is abelian for one of the 2 structures only.
+
+In the other direction, we have the following obstruction, which only uses the dimensions of the irreducibles. Given a flat cover $S$, its type is the multiset of the dimensions of its elements, which is a partition of $K$, and we denote by $n_d$ the number of irreducibles of dimension $d$:
+
+\begin{proposition}
+If $\Gamma$ is stationary, there are weights $c_T\geq0$, indexed by the types $T$ of flat covers, such that for any $d$ we have
+$$\sum_Tc_T\,m_d(T)=\frac{Kd\,n_d}{|\Gamma|}$$
+where $m_d(T)$ is the multiplicity of $d$ in $T$. In particular, at $K=3$ we must have $n_1\geq2n_2$.
+\end{proposition}
+
+\begin{proof}
+The first assertion follows from Theorem 3.2 (3), by summing the equations over the irreducibles of each given dimension, and grouping the flat covers by type. At $K=3$ the possible types are $(1,1,1)$, $(2,1)$, $(3)$, and with $a,b$ being the total weights of the first 2 types, the equations for $d=2$ and $d=1$ read $b=6n_2/|\Gamma|$ and $3a+b=3n_1/|\Gamma|$, so $a\geq0$ gives $n_1\geq2n_2$.
+\end{proof}
+
+Now consider the group $\Gamma=\mathbb Z_3\times SL_2(\mathbb F_3)={\rm SmallGroup}(72,25)$, which has irreducibles $1^9\,2^9\,3^3$, and 2 uniform structures. The census shows that all the irreducibles are admissible, the point being that the elements of order 3 of $SL_2(\mathbb F_3)$ have distinct eigenvalues in the 2-dimensional representations. However, since $n_1=9<18=2n_2$, Proposition 8.2 shows that these structures are not stationary. The same phenomenon appears in a very natural way at $K=5$, as follows:
+
+\begin{proposition}
+Consider the group $\Gamma=A_5\times\mathbb Z_5^2$, with generators $g_1=(a,e_1)$ and $g_2=(b,e_2)$, where $a=(12345)$, $b=(21345)$, and $e_1,e_2$ are the standard generators of $\mathbb Z_5^2$. Then $\Gamma$ is uniform, with $K=5$, $M=2$, all its irreducibles are admissible, but $\Gamma$ is not stationary.
+\end{proposition}
+
+\begin{proof}
+The 5-cycles $a,b$ are not powers of each other, so they generate a subgroup of $A_5$ having at least 2 Sylow 5-subgroups, which must be $A_5$ itself. Since $A_5$ is perfect, $\Gamma^{ab}=\mathbb Z_5^2$, with $g_1,g_2$ mapping to a basis, and the subgroup generated by $g_1,g_2$ contains its derived subgroup, which is $A_5\times1$, so it is $\Gamma$. The conjugation by the transposition $(12)$, which exchanges $a,b$, combined with the flip of $e_1,e_2$, gives the $S_2$ symmetry. The irreducibles of $\Gamma$ are the products $\tau\otimes\chi$, with $\tau\in{\rm Irr}(A_5)$, of dimensions $1,3,3,4,5$, and $\chi\in\widehat{\mathbb Z}_5^2$, so that ${\rm Irr}(\Gamma)=1^{25}\,3^{50}\,4^{25}\,5^{25}$, and since the 5-cycles have simple spectrum in all the irreducibles of $A_5$, all these are admissible. Finally, a flat cover containing an irreducible of dimension 3 must be of type $(3,1,1)$. Thus, by summing the equations in Theorem 3.2 (3), the stationarity would require the characters to carry a total weight $\geq2\cdot50\cdot15/1500=1$, while their total weight is $25\cdot5/1500=1/12$.
+\end{proof}
+
+The other admissible but non-stationary groups in the census are as follows, all failing because of the dimension obstruction in Proposition 8.2:
+\begin{enumerate}
+\item At $K=4$, the groups $\mathbb Z_4\times(A_4\rtimes\mathbb Z_4)={\rm SmallGroup}(192,969)$ and $\mathbb Z_4\times(H_3\rtimes\mathbb Z_4)={\rm SmallGroup}(432,275)$, with $H_3$ being the Heisenberg group of order 27.
+
+\item At $K=5$, the group $\mathbb Z_5\times(((\mathbb Z_2\times Q_8)\rtimes\mathbb Z_2)\rtimes\mathbb Z_5)={\rm SmallGroup}(800,1065)$, with $Q_8$ being the quaternion group.
+
+\item At $K=6$, the groups $\mathbb Z_2\times\mathbb Z_6\times SL_2(\mathbb F_3)={\rm SmallGroup}(288,981)$ and $\mathbb Z_3\times(((\mathbb Z_2\times Q_8)\rtimes\mathbb Z_2)\rtimes\mathbb Z_3)={\rm SmallGroup}(288,985)$.
+
+\item Also at $K=6$, the groups $\mathbb Z_3^2\times S_3\times S_3={\rm SmallGroup}(324,165)$ and $\mathbb Z_3^2\times(H_3\rtimes\mathbb Z_2^2)={\rm SmallGroup}(972,781)$.
+\end{enumerate}
+
+There is one more admissible but non-stationary group in the census, which is of a different nature, and which will be discussed at the end of this section.
+
+Regarding flat linearity, the census finds 76 uniform groups which are not flat linear. At $M=2$ the smallest one is $(\mathbb Z_2\times((\mathbb Z_4\times\mathbb Z_2)\rtimes\mathbb Z_2))\rtimes\mathbb Z_4={\rm SmallGroup}(128,36)$, with $K=4$, irreducibles $1^{16}\,2^4\,4^6$, and flat kernel of order 2, and with $K=3$ the smallest one is $(\mathbb Z_9\rtimes\mathbb Z_9)\rtimes\mathbb Z_3={\rm SmallGroup}(243,28)$, with irreducibles $1^9\,3^8\,9^2$, and flat kernel of order 3. At $M=4$, the smallest one is the extraspecial group $2^{1+4}_-={\rm SmallGroup}(32,50)$, with irreducibles $1^{16}\,4^1$. Here the reason is simple: the irreducible of dimension $4>2$ cannot appear in a flat representation, so the flat representations factorize through $\Gamma^{ab}$, and the flat kernel is the derived subgroup, of order 2. Finally, at $M=3$ the smallest one is $\mathbb Z_2^2\times S_4={\rm SmallGroup}(96,226)$, with irreducibles $1^8\,2^4\,3^8$, and flat kernel of order 4. In all these examples, the failure of flat linearity can be read on the character table alone, via Theorem 3.2 (2): the admissible irreducibles have a nontrivial common kernel. The last group above can be described explicitly, as follows:
+
+\begin{proposition}
+Consider the group $\Gamma=S_4\times\mathbb Z_2^2$, with generators $g_i=(t_i,f_i)$, where $t_1=(12)$, $t_2=(13)$, $t_3=(14)$, and $f_1,f_2,f_3$ are the nonzero elements of $\mathbb Z_2^2$. Then $\Gamma$ is uniform, with $K=2$, $M=3$, but it is not flat linear, the subgroup $V_4\times1$ being contained in the kernel of any flat representation.
+\end{proposition}
+
+\begin{proof}
+The vectors $(1,f_i)\in\mathbb Z_2\times\mathbb Z_2^2=\Gamma^{ab}$ form a basis, so $\Gamma^{ab}=\mathbb Z_2^3$ with the $g_i$ mapping to a basis. The subgroup $H$ generated by the $g_i$ projects onto $S_4$, so its derived subgroup is $A_4\times1$, and since $H^{ab}$ maps onto $\mathbb Z_2^3$, we get $|H|\geq12\cdot8=96$, so $H=\Gamma$. The permutations of $\{2,3,4\}$ act on $S_4$ by conjugation, permuting the $t_i$, and $GL_2(\mathbb F_2)\simeq S_3$ acts on $\mathbb Z_2^2$ by permuting the $f_i$, so we have the $S_3$ symmetry. Finally, a flat representation has dimension 2, so its irreducible components have dimension $\leq2$, and those of $S_4\times\mathbb Z_2^2$ are of the form $\sigma\otimes\chi$ with $\sigma$ an irreducible of $S_4$ of dimension $\leq2$, which factorizes through $S_4/V_4=S_3$.
+\end{proof}
+
+Despite these negative results, the census shows that, in most cases, stationarity is decided by dimension counting alone, once admissibility holds. Indeed, out of the 731 admissible uniform structures in the census, 730 are stationary precisely when the linear system in Proposition 8.2 has a solution $c_T\geq0$, with $T$ ranging over the types of flat covers. The remaining one is as follows:
+
+\begin{proposition}
+The group $\Gamma=\mathbb Z_3^2\times((\mathbb Z_6\times S_3)\rtimes\mathbb Z_2)={\rm SmallGroup}(648,648)$ has a uniform structure with $K=6$, $M=2$, whose irreducibles $1^{36}\,2^{81}\,4^{18}$ are all admissible, for which the linear system in Proposition $8.2$ has a solution, but which is not stationary.
+\end{proposition}
+
+\begin{proof}
+The census data shows that the irreducibles are all admissible, and that there are 4224 flat covers, of types $(1^6)$, $(1^4,2)$, $(1^2,2^2)$, $(1^2,4)$, $(2^3)$, $(2,4)$. The right-hand sides in Proposition 8.2 are $1/3$, $3/2$, $2/3$ for $d=1,2,4$, and a solution is given by the weights $1/18$, $5/18$, $2/3$ on the types $(1^6)$, $(2^3)$, $(2,4)$. Assume now that $\Gamma$ is stationary, with weights $c_S$ as in Theorem 3.2 (3), and let $a,b$ be the total weights of the flat covers of type $(1^2,4)$ and $(2,4)$. Since each of the 18 irreducibles of dimension 4 has weight $6\cdot4/648=1/27$, and appears only in covers of these 2 types, once, we have $a+b=18/27=2/3$. Since each cover of type $(1^2,4)$ contains 2 characters, and the 36 characters have total weight $36\cdot6/648=1/3$, we have $2a\leq1/3$, and so $b\geq1/2$. On the other hand, the census data shows that only 9 of the 81 irreducibles of dimension 2 appear in covers of type $(2,4)$, and since these have total weight $9\cdot12/648=1/6$, we obtain $b\leq1/6$, a contradiction. This argument is confirmed by the exact Farkas certificate produced by {\tt census.py}.
+\end{proof}
+
+Thus, stationarity depends not only on the dimensions of the irreducibles, but also on which irreducibles can appear together in a flat representation.
+
+Finally, at $K=9$ there are 4 admissible uniform structures having more than $400000$ flat covers, which are too many for our enumeration, but which can be decided by hand, by using the symmetries of their spectral data, as follows:
+
+\begin{proposition}
+At $K=9$, $M=2$, the 2 uniform structures on the group $\mathbb Z_9\times(Q_8\rtimes\mathbb Z_9)={\rm SmallGroup}(648,90)$, with irreducibles $1^{81}\,2^{81}\,3^{27}$, are not stationary, while those on the groups $((\mathbb Z_9\times\mathbb Z_3)\rtimes\mathbb Z_3)\rtimes\mathbb Z_9={\rm SmallGroup}(729,26)$ and $(\mathbb Z_2\times\mathbb Z_2)\rtimes((\mathbb Z_9\times\mathbb Z_3)\rtimes\mathbb Z_9)={\rm SmallGroup}(972,173)$, with irreducibles $1^{81}\,3^{72}$ and $1^{81}\,3^{99}$, are stationary.
+\end{proposition}
+
+\begin{proof}
+The census data shows, as checked by the program {\tt k9.py}, that in all cases the irreducibles are admissible, that the spectrum of each irreducible of dimension 3 is, on each generator, a residue class modulo 3, inside $\{1,\ldots,9\}$, and that the spectrum of each irreducible of dimension 2, on the first generator, consists of 2 elements of a residue class modulo 3.
+
+In the first case, a residue class modulo 3 can contain the spectrum of at most one irreducible of dimension 2, and its remaining element must then be covered by a character. Thus any flat cover contains at least as many characters as irreducibles of dimension 2. On the other hand, by summing the equations in Theorem 3.2 (3), stationarity would require the expected numbers of such irreducibles in a flat cover, with respect to the weights $c_S$, to be $9\cdot2\cdot81/648=9/4$ for the irreducibles of dimension 2, and $9\cdot81/648=9/8$ for the characters, a contradiction. Observe that this argument only uses the types of the flat covers, so the dimension counting test fails as well.
+
+In the second case, the census data shows that the 9 pairs of residue classes, for the 2 generators, appear equally often among the irreducibles of dimension 3, namely $n_3/9$ times each, where $n_3=72,99$ is their number. Consider the random flat cover obtained by choosing a uniform random bijection between the residue classes for the first generator and those for the second generator, and then, in each of the 3 resulting cells, an irreducible of dimension 3, uniformly. Each irreducible of dimension 3 is chosen with probability $(1/3)\cdot(9/n_3)=3/n_3$. Also, by choosing uniformly one of the 9 translates of the diagonal, as in Theorem 3.4, each character is chosen with probability $1/9$. With total weights $81/|\Gamma|$ and $9n_3/|\Gamma|$ on these 2 constructions, which sum up to 1, because $|\Gamma|=81+9n_3$, each character gets weight $9/|\Gamma|$, and each irreducible of dimension 3 gets weight $27/|\Gamma|$, as required by Theorem 3.2 (3).
+\end{proof}
+
+We can now summarize the main findings of the census, as follows:
+
+\begin{theorem}
+For finite uniform groups, the following happen:
+\begin{enumerate}
+\item Stationarity does not imply that $\Lambda_\Gamma$ is abelian, as shown by $A_4\times\mathbb Z_3$.
+
+\item Admissibility does not imply stationarity, as shown by $\mathbb Z_3\times SL_2(\mathbb F_3)$ and $A_5\times\mathbb Z_5^2$.
+
+\item Flat linearity can fail, as shown by $S_4\times\mathbb Z_2^2$, with $K=2$, $M=3$, and by $2^{1+4}_-$, with $K=2$, $M=4$.
+
+\item Admissibility and dimension counting do not imply stationarity, as shown by the group $\mathbb Z_3^2\times((\mathbb Z_6\times S_3)\rtimes\mathbb Z_2)$, with $K=6$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+This follows from Propositions 8.1-8.6, and from the above discussion.
+\end{proof}
+
+\section{Beyond flatness}
+
+In this final section we discuss some notions going beyond the flatness considered so far, both at the level of faithfulness, and of flatness itself. Let us start with faithfulness. Given a probability measure $\mu$ on the space $X_\Gamma$ of flat representations, consider the positive definite function on $\Gamma$ given by $\psi(g)=\int_{X_\Gamma}tr(\pi(g))\,d\mu(\pi)$. This function satisfies $\psi(1)=1$ and $|\psi(g)|\leq1$, and it is a convex combination of the normalized characters of the flat representations, with respect to the measure $\mu$. In the quantum group picture, $\psi$ is the random matrix trace of the model, and the inner faithfulness is related to the Ces\`aro limit of its convolution powers, see \cite{wa3}. In the group dual case, $\Delta(g)=g\otimes g$, so the convolution powers are simply the pointwise powers, $\psi^{*r}=\psi^r$, and we obtain:
+
+\begin{proposition}
+With the above notations, the following hold:
+\begin{enumerate}
+\item The measure $\mu$ is a stationarity measure precisely when $\psi=\delta_1$.
+
+\item The flat representations in the support of $\mu$ separate the points of $\Gamma$ precisely when $\psi(g)\neq1$, for any $g\neq1$.
+
+\item If $\Gamma$ is not amenable, then $\psi\notin\ell^p(\Gamma)$, for any $p<\infty$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(1) is clear. Regarding (2), since $|\psi(g)|\leq1$, the Ces\`aro means of $\psi(g)^r$ converge to 1 if $\psi(g)=1$, and to 0 otherwise. Moreover, since $Re\,tr(V)\leq1$ for $V\in U_K$, with equality only at $V=1$, by continuity $\psi(g)=1$ happens precisely when $\pi(g)=1$ for any $\pi$ in the support of $\mu$. Regarding (3), assume that $\psi\in\ell^p(\Gamma)$, and pick an integer $r$ with $2r\geq p$. Since $|\psi|\leq1$, we have $\psi^r\in\ell^2(\Gamma)$, and $\psi^r$ is the average of the normalized traces of the representations $\pi_1\otimes\ldots\otimes\pi_r$, with respect to $\mu^{\otimes r}$, which have size $K^r$. Thus we can assume $p=2$, with $K$ replaced by $K^r$. Now a positive definite function in $\ell^2(\Gamma)$ is a coefficient of the left regular representation $\lambda$, so its GNS representation is contained in $\lambda$, and so extends to $C^*_{red}(\Gamma)$. On the other hand, the image of this GNS representation is a quotient of the image of the model, which is contained in $M_K(C(X_\Gamma))$, and so is subhomogeneous. Thus $C^*_{red}(\Gamma)$ would have a nonzero finite dimensional representation, which forces $\Gamma$ to be amenable. See \cite{bo}.
+\end{proof}
+
+In the spirit of Kesten's amenability criterion \cite{kes}, statement (3) says that for a non-amenable group, the random matrix trace of a flat model cannot decay too fast, and in fact cannot belong to any of the spaces $\ell^p(\Gamma)$ with $p<\infty$. Thus, the decay of $\psi$ provides a scale of notions between stationarity and inner faithfulness which is of a different nature, such as $\psi\in c_0(\Gamma)$, or $\sup_{g\neq1}|\psi(g)|<1$, and it would be interesting to investigate them for the free products $\mathbb Z_K^{*M}$, where for the Haar measure on $X_\Gamma=C_W^M$ the values $\psi(\gamma)$ are integrals of products of randomly rotated copies of $W$.
+
+Let us discuss now flatness itself. Recall from section 2 that flatness means that the landscape of ranks associated to the model is flat, at height 1. The first natural generalization is as follows:
+
+\begin{definition}
+A representation $\pi:\Gamma\to U_{mK}$ is called flat at height $m$ when each $\pi(g_i)$ has the $K$-th roots of unity as eigenvalues, each with multiplicity $m$. We call $\Gamma$ flat linear, or stationary, at height $m$, when the corresponding properties hold for the flat representations at height $m$.
+\end{definition}
+
+In quantum group terms, a family of representations which are flat at height $m$ produces a matrix model $\pi:C(\widehat{\Gamma})\to M_{mK}(C(X))$ whose rank matrices are block-flat, with all entries equal to $m$ inside the diagonal $K\times K$ blocks, and the regular representation below corresponds to the canonical model of $\widehat{\Gamma}$ on $\ell^2(\Gamma)$. For a finite group, the flat representations at height $m$ are the sums $\sum_\tau x_\tau\tau$ with $x\in\mathbb N^{{\rm Irr}(\Gamma)}$ satisfying $\sum_\tau x_\tau e_\tau=m$, the all-$m$ matrix, and the analogue of Theorem 3.2 holds, with the stationarity equations becoming $\sum_xc_xx_\tau=mK\dim(\tau)/|\Gamma|$. These conditions are checked by the program {\tt heights.py}. We have:
+
+\begin{proposition}
+Any finite uniform group $\Gamma$ is flat linear and stationary at height $|\Gamma|/K$, via its regular representation. Thus, we have minimal heights
+$$h_{lin}(\Gamma)\leq h_{stat}(\Gamma)\leq|\Gamma|/K$$
+and these are respectively $2,3$ for $S_4\times\mathbb Z_2^2$, $1,2$ for $\mathbb Z_3\times SL_2(\mathbb F_3)$, and $1,3$ for $\Gamma_{3,2}$.
+\end{proposition}
+
+\begin{proof}
+Since each $g_i$ has order $K$, it acts freely on $\Gamma$ by left multiplication, so the restriction of the regular representation to $\langle g_i\rangle$ is a multiple of the regular representation of $\mathbb Z_K$, with multiplicity $|\Gamma|/K$. Thus the regular representation is flat at height $|\Gamma|/K$, and it is faithful and stationary, its normalized trace being $\delta_1$. The numeric values come from {\tt heights.py}.
+\end{proof}
+
+A second generalization concerns the joint behavior of the generators. For a flat representation $\pi$, let $P^{(i)}_a$ be the rank one spectral projections of $\pi(g_i)$. Flatness is a condition on the ranks of the $P^{(i)}_a$, and the next condition concerns the products:
+
+\begin{definition}
+A flat representation $\pi:\Gamma\to U_K$ is called $2$-flat when $tr(P^{(i)}_aP^{(j)}_b)=1/K^2$, for any $i\neq j$ and any $a,b$.
+\end{definition}
+
+Since $tr(P_\xi P_\eta)=|\langle\xi,\eta\rangle|^2/K$ for unit vectors $\xi,\eta$, this means that the eigenbases of $\pi(g_i)$ and $\pi(g_j)$ are mutually unbiased, for any $i\neq j$, that is, that the matrices $\sqrt{K}\,U_i^*U_j$ are complex Hadamard matrices, where $U_i$ is a unitary diagonalizing $\pi(g_i)$. This brings the mutually unbiased bases, and the Hadamard matrices, into the picture \cite{dur,wfi}. Recall that a family of mutually unbiased bases in $\mathbb C^K$ has at most $K+1$ elements, that this bound is attained when $K$ is a prime power, via the construction of Wootters and Fields, and that for $K=6$ it is widely believed that at most 3 such bases exist, despite many analytic and numerical studies. We have the following result, where the last assertion refers to the well-known open question of the existence of 4 mutually unbiased bases in $\mathbb C^6$:
+
+\begin{theorem}
+The following hold:
+\begin{enumerate}
+\item Any finite uniform group $\Gamma$ is flat linear and stationary at height $|\Gamma|/K$.
+
+\item For $K$ prime, the irreducibles of dimension $K$ of the Heisenberg group $H_K$ are $2$-flat.
+
+\item The $2$-flat representations of $\mathbb Z_K^{*M}$ correspond to the $M$-tuples of mutually unbiased bases of $\mathbb C^K$, formed by eigenvectors labeled by eigenvalues, and taken modulo phases. In particular, for $K\geq2$, they exist for $M\leq K+1$ when $K$ is a prime power, they do not exist for $M>K+1$, and their existence for $K=6$, $M=4$ is equivalent to the existence of $4$ mutually unbiased bases in $\mathbb C^6$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) is Proposition 9.3. (2) follows from the fact that $\tau_l(g_1)=P$ is diagonalized by the Fourier matrix, and $\tau_l(g_2)=D^l$ by the identity, and these 2 bases are mutually unbiased. (3) follows from the fact that the flat representations of $\mathbb Z_K^{*M}$ are the tuples $(U_1WU_1^*,\ldots,U_MWU_M^*)$, with arbitrary $U_i\in U_K$, so that the 2-flatness condition is precisely the mutual unbiasedness of the columns of $U_1,\ldots,U_M$, together with the known results on mutually unbiased bases \cite{dur,wfi}.
+\end{proof}
+
+Finally, let us mention a few questions in the infinite case. Here the space $X_\Gamma$ is in general no longer a finite union of orbits, and the basic examples are the infinite dihedral group, covered by Theorem 5.2, and the universal metabelian groups $(\mathbb Z_K*\mathbb Z_K)_{met}$, which are extensions of $\mathbb Z_K^2$ by $\mathbb Z^{(K-1)^2}$. For $K$ prime these groups are flat linear, by \cite{bc2}, and the question is open for $K$ composite, and for their quotients whose derived subgroup has $K$-primary torsion, where the finite quotients $\Gamma_{3,3}$ and $\Gamma_{4,2}$ are not flat linear, by Theorem 6.3. Also, Theorem 2.4 suggests that the arguments in \cite{bfr} for the amalgamated free products of cyclic groups, and for the free products of copies of $\mathbb Z_K^{M_i}$, can be completed in the same way, by complexification.
+
+\begin{thebibliography}{99}
+
+\bibitem{bbi}T. Banica and J. Bichon, Hopf images and inner faithful representations, {\em Glasg. Math. J.} {\bf 52} (2010), 677--703.
+
+\bibitem{bc1}T. Banica and A. Chirvasitu, Thoma type results for discrete quantum groups, {\em Internat. J. Math.} {\bf 28} (2017), 1--23.
+
+\bibitem{bc2}T. Banica and A. Chirvasitu, Quasi-flat representations of uniform groups and quantum groups, {\em J. Algebra Appl.} {\bf 18} (2019), 1--27.
+
+\bibitem{bfr}T. Banica and A. Freslon, Modelling questions for quantum permutations, {\em Infin. Dimens. Anal. Quantum Probab. Relat. Top.} {\bf 21} (2018), 1--26.
+
+\bibitem{bne}T. Banica and I. Nechita, Flat matrix models for quantum permutation groups, {\em Adv. Appl. Math.} {\bf 83} (2017), 24--46.
+
+\bibitem{bea}A.F. Beardon, The geometry of discrete groups, Springer (1983).
+
+\bibitem{bes}H.U. Besche, B. Eick and E.A. O'Brien, A millennium project: constructing small groups, {\em Internat. J. Algebra Comput.} {\bf 12} (2002), 623--644.
+
+\bibitem{bic}J. Bichon, Algebraic quantum permutation groups, {\em Asian-Eur. J. Math.} {\bf 1} (2008), 1--13.
+
+\bibitem{bna}J. Bichon and S. Natale, Hopf algebra deformations of binary polyhedral groups, {\em Transform. Groups} {\bf 16} (2011), 339--374.
+
+\bibitem{bo}N.P. Brown and N. Ozawa, C$^*$-algebras and finite-dimensional approximations, AMS (2008).
+
+\bibitem{bur}W. Burnside, Theory of groups of finite order, Cambridge Univ. Press (1911).
+
+\bibitem{dek}Th.J. Dekker, On free products of cyclic rotation groups, {\em Canad. J. Math.} {\bf 11} (1959), 67--69.
+
+\bibitem{dix}J.D. Dixon, High speed computation of group characters, {\em Numer. Math.} {\bf 10} (1967), 446--450.
+
+\bibitem{dur}T. Durt, B.-G. Englert, I. Bengtsson and K. \.Zyczkowski, On mutually unbiased bases, {\em Int. J. Quantum Inf.} {\bf 8} (2010), 535--640.
+
+\bibitem{eps}D.B.A. Epstein, Almost all subgroups of a Lie group are free, {\em J. Algebra} {\bf 19} (1971), 261--262.
+
+\bibitem{heo}D.F. Holt, B. Eick and E.A. O'Brien, Handbook of computational group theory, CRC Press (2005).
+
+\bibitem{kat}S. Katok, Fuchsian groups, Univ. of Chicago Press (1992).
+
+\bibitem{kes}H. Kesten, Symmetric random walks on groups, {\em Trans. Amer. Math. Soc.} {\bf 92} (1959), 336--354.
+
+\bibitem{knu}D.E. Knuth, Dancing links, in ``Millennial perspectives in computer science'', Palgrave (2000), 187--214.
+
+\bibitem{lma}A. Lubotzky and A.R. Magid, Varieties of representations of finitely generated groups, {\em Mem. Amer. Math. Soc.} {\bf 58} (1985).
+
+\bibitem{mw1}A. Mang and M. Weber, Non-hyperoctahedral categories of two-colored partitions, part I: new categories, {\em J. Algebraic Combin.} {\bf 54} (2021), 475--513.
+
+\bibitem{rw2}S. Raum and M. Weber, Easy quantum groups and quantum subgroups of a semi-direct product quantum group, {\em J. Noncommut. Geom.} {\bf 9} (2015), 1261--1293.
+
+\bibitem{rwe}S. Raum and M. Weber, The full classification of orthogonal easy quantum groups, {\em Comm. Math. Phys.} {\bf 341} (2016), 751--779.
+
+\bibitem{ser}J.-P. Serre, Linear representations of finite groups, Springer (1977).
+
+\bibitem{sik}A.S. Sikora, Character varieties, {\em Trans. Amer. Math. Soc.} {\bf 364} (2012), 5173--5208.
+
+\bibitem{tw}P. Tarrago and M. Weber, The classification of tensor categories of two-colored noncrossing partitions, {\em J. Combin. Theory Ser. A} {\bf 154} (2018), 464--506.
+
+\bibitem{tho}E. Thoma, \"Uber unit\"are Darstellungen abz\"ahlbarer, diskreter Gruppen, {\em Math. Ann.} {\bf 153} (1964), 111--138.
+
+\bibitem{wa1}S. Wang, Free products of compact quantum groups, {\em Comm. Math. Phys.} {\bf 167} (1995), 671--692.
+
+\bibitem{wa2}S. Wang, Quantum symmetry groups of finite spaces, {\em Comm. Math. Phys.} {\bf 195} (1998), 195--211.
+
+\bibitem{wa3}S. Wang, $L_p$-improving convolution operators on finite quantum groups, {\em Indiana Univ. Math. J.} {\bf 65} (2016), 1609--1637.
+
+\bibitem{wfi}W.K. Wootters and B.D. Fields, Optimal state-determination by mutually unbiased measurements, {\em Ann. Physics} {\bf 191} (1989), 363--381.
+
+\bibitem{wo1}S.L. Woronowicz, Compact matrix pseudogroups, {\em Comm. Math. Phys.} {\bf 111} (1987), 613--665.
+
+\end{thebibliography}
+
+\end{document}

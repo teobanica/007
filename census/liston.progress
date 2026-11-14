@@ -1,0 +1,61 @@
+start liston
+K=9 M=2 n=81 groups=15 uniform structures=1 time=963ms
+K=9 M=2 n=162 groups=55 uniform structures=0 time=20ms
+K=9 M=2 n=243 groups=67 uniform structures=1 time=2393ms
+K=9 M=2 n=324 groups=176 uniform structures=2 time=2038ms
+K=9 M=2 n=405 groups=16 uniform structures=0 time=5ms
+K=9 M=2 n=486 groups=261 uniform structures=0 time=106ms
+K=9 M=2 n=567 groups=49 uniform structures=4 time=3718ms
+K=9 M=2 n=648 groups=757 uniform structures=2 time=4924ms
+K=9 M=2 n=729 groups=504 uniform structures=13 time=15375ms
+K=9 M=2 n=810 groups=113 uniform structures=0 time=54ms
+K=9 M=2 n=891 groups=15 uniform structures=0 time=5ms
+K=9 M=2 n=972 groups=900 uniform structures=2 time=170695ms
+K=9 M=2 n=1053 groups=51 uniform structures=4 time=272729ms
+K=9 M=2 n=1134 groups=254 uniform structures=0 time=121ms
+K=9 M=2 n=1215 groups=69 uniform structures=0 time=57ms
+K=9 M=2 n=1296 skipped (3609 groups)
+K=9 M=2 n=1377 groups=15 uniform structures=0 time=9ms
+K=9 M=2 n=1458 groups=1798 uniform structures=0 time=2194ms
+K=9 M=2 n=1539 groups=60 uniform structures=64 time=3337033ms
+K=9 M=2 n=1620 groups=477 uniform structures=0 time=238ms
+K=9 M=2 n=1701 groups=309 uniform structures=4 time=424583ms
+K=9 M=2 n=1782 groups=110 uniform structures=0 time=54ms
+K=9 M=2 n=1863 groups=15 uniform structures=0 time=10ms
+K=9 M=2 n=1944 skipped (3973 groups)
+K=8 M=2 n=64 groups=267 uniform structures=1 time=612ms
+K=8 M=2 n=128 groups=2328 uniform structures=1 time=1972ms
+K=8 M=2 n=192 groups=1543 uniform structures=1 time=1310ms
+K=8 M=2 n=256 skipped (56092 groups)
+K=8 M=2 n=320 groups=1640 uniform structures=9 time=3789ms
+K=8 M=2 n=384 skipped (20169 groups)
+K=8 M=2 n=448 groups=1396 uniform structures=1 time=1619ms
+K=8 M=2 n=512 skipped (10494213 groups)
+K=8 M=2 n=576 skipped (8681 groups)
+K=8 M=2 n=640 skipped (21541 groups)
+K=8 M=2 n=704 groups=1387 uniform structures=1 time=58598ms
+K=8 M=2 n=768 skipped (1090235 groups)
+K=8 M=2 n=832 groups=1630 uniform structures=9 time=369653ms
+K=8 M=2 n=896 skipped (19349 groups)
+K=8 M=2 n=960 skipped (11394 groups)
+K=8 M=2 n=1024 skipped (49487367289 groups)
+K=8 M=2 n=1088 groups=1681 uniform structures=49 time=1688360ms
+K=8 M=2 n=1152 skipped (157877 groups)
+K=8 M=2 n=1216 groups=1387 uniform structures=1 time=72741ms
+K=8 M=2 n=1280 skipped (1116461 groups)
+K=8 M=2 n=1344 skipped (11720 groups)
+K=8 M=2 n=1408 skipped (19324 groups)
+K=8 M=2 n=1472 groups=1387 uniform structures=1 time=85172ms
+K=8 M=2 n=1536 skipped (408641062 groups)
+K=8 M=2 n=1600 skipped (10281 groups)
+K=8 M=2 n=1664 skipped (21507 groups)
+K=8 M=2 n=1728 skipped (47937 groups)
+K=8 M=2 n=1792 skipped (1083553 groups)
+K=8 M=2 n=1856 groups=1630 uniform structures=9 time=556944ms
+K=8 M=2 n=1920 skipped (241004 groups)
+K=8 M=2 n=1984 groups=1388 uniform structures=1 time=113842ms
+K=4 M=2 n=1008 groups=954 uniform structures=5 time=24119ms
+K=4 M=2 n=1024 skipped (49487367289 groups)
+K=4 M=2 n=1040 groups=231 uniform structures=81 time=214787ms
+K=4 M=2 n=1056 groups=1028 uniform structures=1 time=7780ms
+K=4 M=2 n=1072 groups=42 uniform structures=1 time=4486ms
